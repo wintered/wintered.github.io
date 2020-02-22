@@ -1,43 +1,49 @@
 # jemdoc: nofooter
+= Dominik Winterer
 
-== Dominik Winterer 
 ~~~
-{}{img_left}{myface.png}{alt text}{100px}{100px}{IMGLINKTARGET}
-
-I'm a PhD student in the AST lab at ETH Zurich, advised by Prof. Zhendong Su.  
-My research focus spans \* Software Engineering  \* PL  \* Logic    
-Prior to that I did my Bachelors and Masters at the University of Freiburg.
-Before, I was doing research in Automated Planning (symbolic AI). 
-In 2017, I had an internship with IBM Research where I implemented the k-shortest        
-path algorithm K*.  
+{}{img_left}{myface.png}{alt text}{170px}{170px}{IMGLINKTARGET}
+PhD student\n 
+Departement of Computer Science\n 
+CNB, H 103.2\n
+ETH Zurich, Switzerland  
+#I'm a PhD student in the AST lab at ETH Zurich, advised by Prof. Zhendong Su.  
+#Prior to that I did my Bachelors and Masters at the University of Freiburg.
+#Before, I was doing research in Automated Planning (symbolic AI). 
+#In 2017, I had an internship with IBM Research where I implemented the k-shortest        
+#path algorithm K*.  
 ~~~
+dfasfsf 
+== News 
+- We open-sourced our SMT solver testing tool YinYang.  
 
 == Publications   
-- On the Unusual Effectiveness of Type-aware Mutations for Testing SMT solvers  
-  Dominik Winterer*, Chengyu Zhang*, Zhendong Su 
+- [http://cvxmod.net/ On the Unusual Effectiveness of Type-aware Mutations for Testing SMT solvers] \n 
+  *Dominik Winterer*, Chengyu Zhang, Zhendong Su \n
   In CAV 2020
 
-*Equal Contribution 
 
-- Validating SMT solvers via Semantic Fusion   
-  Dominik Winterer*, Chengyu Zhang*, Zhendong Su  
-  In PLDI 2020 
+- [http://cvxmod.net/ Validating SMT solvers via Semantic Fusion] \n
+  *Dominik Winterer*, Chengyu Zhang, Zhendong Su \n  
+  In [https://conf.researchr.org/home/pldi-2020 Proceedings of PLDI 2020], London, UK, UK, June 2020.  
   
-Publications in AI Planning
 
+\[[http://cvxmod.net/ Publications in AI Planning]\]
 == Teaching  
-Databases .. 
-Teaching Assistant, Spring 2020  
-
-Compiler Design, Fall 2019 
+- Data Modelling and Databases, ETH Zurich, Spring 2020 \n 
 Teaching Assistant 
 
-Decision Procedures, Fall 2018
-(University of Konstanz)
+- Compiler Design, ETH Zurich, Fall 2019 \n
+Teaching Assistant 
 
-Cyber-Physical Systems, Discrete Models    
+- Decision Procedures, University of Konstanz, Fall 2018 \n
+Teaching Assistant 
 
-Theoretical Computer Science,
+- Model Checking, University of Freiburg,XXX \n 
+Student Teaching Assistant
+
+- Theoretical Computer Science,XXX \n
+Student Teaching Assistant
 
 == Services 
 - Reviewer 
@@ -46,6 +52,3 @@ Theoretical Computer Science,
 - Subreviewer 
   ICAPS  '18
 
-~~~
-
-~~~

@@ -9,11 +9,13 @@ path algorithm K*.
 # Publications
 - On the Unusual Effectiveness of Type-aware Mutations for Testing SMT solvers  
   Dominik Winterer*, Chengyu Zhang*, Zhendong Su 
+  In CAV 2020
 
 *Equal Contribution 
 
 - Validating SMT solvers via Semantic Fusion   
   Dominik Winterer*, Chengyu Zhang*, Zhendong Su  
+  In PLDI 2020 
 
 [AI Planning Publications] 
 
