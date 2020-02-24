@@ -1,4 +1,3 @@
 all:
-	jemdoc -c website.conf *.jemdoc
-	firefox *.html &
-
+	jemdoc -c website.conf *.jemdoc 
+	chromium-browser index.html

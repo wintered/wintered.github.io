@@ -1,0 +1,22 @@
+# jemdoc: nofooter
+== Publications in AI Planning  
+
+Prior to my PhD studies at ETH, I was doing research in Automated Planning (symbolic AI). 
+In 2017, I had an internship with IBM Research where I implemented the k-shortest        
+path algorithm K*.  
+
+- [https://aaai.org/ojs/index.php/ICAPS/article/view/3482  Oversubscription Planning as Planning with Multiple Cost Functions] \n
+Michael Katz, Emil Keyder, Florian Pommerening, Dominik Winterer \n
+In /[https://icaps19.icaps-conference.org/ Proceedings of ICAPS 2019]/, Berkley, USA, July 2019.\n
+
+- [https://aaai.org/ocs/index.php/ICAPS/ICAPS18/paper/view/17749 A Novel Iterative Approach to Top-$k$ Planning] \n
+Michael Katz, Shirin Sohrabi, Octavian Udrea, Dominik Winterer \n
+In /[https://http://icaps18.icaps-conference.org/ Proceedings of ICAPS 2018]/, Delft, Netherlands, June 2018.
+
+- [https://aaai.org/ocs/index.php/ICAPS/ICAPS17/paper/view/15760 Stubborn Sets for Fully Observable Nondeterministic Planning] \n  
+Dominik Winterer, Yusra Alkhazraji, Michael Katz, Martin Wehrle \n
+In /[http://icaps17.icaps-conference.org/  Proceedings of ICAPS 2017]/, Pittsburgh, USA, June 2017.
+
+- [https://edoc.unibas.ch/45239/1/466.pdf, Structural Symmetries for Fully Observable Nondeterministic Planning] \n 
+Dominik Winterer, Martin Wehrle, Michael Katz \n
+In /[http://ijcai-16.org/ Proceedings of IJCAI 2016]/, New York, USA, July 2016.
