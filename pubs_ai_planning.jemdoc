@@ -1,9 +1,12 @@
 # jemdoc: nofooter
 == Publications in AI Planning  
 
-Prior to my PhD studies at ETH, I was doing research in Automated Planning (symbolic AI). 
-In 2017, I had an internship with IBM Research where I implemented the k-shortest        
-path algorithm K*.  
+Prior to my PhD studies at ETH, I did my CS Bachelors and Masters at the 
+[http://www.tf.uni-freiburg.de/en University of Freiburg]. During that time, I did 
+research in [https://en.wikipedia.org/wiki/Automated_planning_and_scheduling Automated Planning] 
+(branch of symbolic AI). The following publications resulted from that time: 
+\n
+\n
 
 - [https://aaai.org/ojs/index.php/ICAPS/article/view/3482  Oversubscription Planning as Planning with Multiple Cost Functions] \n
 Michael Katz, Emil Keyder, Florian Pommerening, Dominik Winterer \n
