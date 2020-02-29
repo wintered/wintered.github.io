@@ -1,4 +1,11 @@
 /* Default css file for jemdoc. */
+.medium{
+    font-size:90%
+}
+
+.small{
+    font-size:80%
+}
 
 table#tlayout {
 	border: none;
@@ -102,7 +109,8 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+        /*border-bottom: 2px solid #aaaaaa;*/
+        border-bottom: 2px solid #aaaaaa;
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -181,14 +189,14 @@ pre {
 
 div#footer {
 	font-size: small;
-	border-top: 1px solid #c0c0c0;
+	/*border-top: 1px solid #c0c0c0;*/
 	padding-top: 0.1em;
 	margin-top: 4.0em;
-	color: #c0c0c0;
+	/*color: #c0c0c0;*/
 }
 
 div#footer a {
-	color: #80a0b0;
+	/*color: #80a0b0;*/
 }
 
 div#footer-text {

@@ -2,38 +2,49 @@
 = Dominik Winterer
 
 ~~~
-{}{img_left}{myface.png}{alt text}{160px}{160px}{IMGLINKTARGET}
+{}{img_left}{round.png}{alt text}{165px}{165px}{}
 Ph.D. Student\n 
 Departement of Computer Science\n 
 ETH Zurich, Switzerland\n 
-*Office*: CNB, H 103.2\n
-*Email*: $\normalsize \texttt{ dominik.winterer@inf.ethz.ch}$ \n
+\n
+*Office*: CNB H 103.2\n
+*Email*: $\texttt{dominik.winterer@inf.ethz.ch}$ \n
+
+{{<a href="https://scholar.google.com/citations?user=XmXhctUAAAAJ&hl=en"> <img src="google_scholar.jpg", height=25px> </img> </a>
+<a href="https://twitter.com/DominikWinterer"> <img src="twitter.jpg", height=25px> </img> </a>
+<a href="https://www.linkedin.com/in/dominik-winterer/"> <img src="linkedin.png", height=25px> </img> </a>}}
 
 ~~~
+\n
+I'm a Ph.D. student advised by Prof. Zhendong Su at ETH Zurich and a member of the  
+[https://people.inf.ethz.ch/suz/team.html AST lab]. I'm interested in formal methods 
+problems in Programming Languages and Software Engineering. Before, if been doing  
+research in AI Planning.
 
-I'm a member of the [https://people.inf.ethz.ch/suz/team.html, AST lab] at 
-ETH Zurich and advised by Prof. Zhendong Su. Currently, I'm passionate 
-about {{<font color=green><b> Testing SMT solvers</b></font>}}.   
+Currently, I'm passionate about {{<font color=green><b> Testing SMT solvers</b></font>}}.   
 
 #== News 
 #Feb 22, 2020        We open-sourced our SMT solver testing tool YinYang.  
 
 == Publications   
-#- [http:// On the Unusual Effectiveness of Type-aware Mutations for Testing SMT solvers] \n 
-  #Dominik Winterer, Chengyu Zhang, Zhendong Su \n
-  ##(\# Equal Contribution)
-
-- [http://cvxmod.net/ Validating SMT solvers via Semantic Fusion] \n
-  $\text{Dominik Winterer}^*, \text{Chengyu Zhang}^*,$ Zhendong Su  ($^*$ Equal Contribution) \n
-  In /[https://conf.researchr.org/home/pldi-2020 Proceedings of PLDI 2020]/, London, UK, June 2020. (conditionally accepted)
-#(23 \%)
+{{ 
+<ul>
+<li><p><a href="" target=&ldquo;blank&rdquo;><b>Validating SMT solvers via Semantic Fusion</b></a> <br />
+Dominik Winterer<sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
+In <i><a href="https://conf.researchr.org/home/pldi-2020" target=&ldquo;blank&rdquo;>Proceedings of PLDI 2020</a></i>, London, UK, June 2020. (conditionally accepted)<br />
+ <span class="small"><sup>*</sup> Equal Contribution</span><br />
+</p>
+</li>
+</ul>
+}}
 
 \[[pubs_ai_planning.html Publications in AI Planning]\]
+
 == Teaching  
 /Teaching Assistant at ETH Zurich/   
-- [http://www.ds3lab.com/dmdb-2020/, Data Modelling and Databases], Spring 2020 \n 
-- [https://people.inf.ethz.ch/suz/teaching/263-2100-s20.html, Research Topics in Software Engineering], Spring 2020\
-- [https://people.inf.ethz.ch/suz/teaching/252-0210.html, Compiler Design], Fall 2019 \n
+- [http://www.ds3lab.com/dmdb-2020/ Data Modelling and Databases], Spring 2020 \n 
+- [https://people.inf.ethz.ch/suz/teaching/263-2100-s20.html Research Topics in Software Engineering], Spring 2020 \n
+- [https://people.inf.ethz.ch/suz/teaching/252-0210.html Compiler Design], Fall 2019 \n
 
 /Teaching Assistant at University of Konstanz/
 - [https://www.sen.uni-konstanz.de/teaching/current-term/past-terms/winter-term-201819/directed-studies-decision-procedures-for-software-verification/, Decision Procedures], Fall 2018 
@@ -49,4 +60,3 @@ about {{<font color=green><b> Testing SMT solvers</b></font>}}.
 
 - Subreviewer 
   ICAPS  '18
-
