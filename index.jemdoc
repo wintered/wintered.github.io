@@ -1,8 +1,7 @@
-# jemdoc: menu{MENU}{index.html}
 = Dominik Winterer
 
 ~~~
-{}{img_left}{round.png}{alt text}{165px}{165px}{}
+{}{img_left}{round.png}{alt text}{152px}{152px}{}
 Ph.D. Student\n 
 Departement of Computer Science\n 
 ETH Zurich, Switzerland\n 
@@ -18,24 +17,32 @@ ETH Zurich, Switzerland\n
 \n
 I'm a Ph.D. student advised by Prof. Zhendong Su at ETH Zurich and a member of the  
 [https://people.inf.ethz.ch/suz/team.html AST lab]. I'm interested in formal methods 
-problems in Programming Languages and Software Engineering. Before, if been doing  
+problems in Programming Languages and Software Engineering. Before, I have been doing  
 research in AI Planning.
 
-Currently, I'm passionate about {{<font color=green><b> Testing SMT solvers</b></font>}}.   
+Currently, I'm passionate about {{<font color=green><b> Testing SMT solvers</b></font>}}.
 
 #== News 
 #Feb 22, 2020        We open-sourced our SMT solver testing tool YinYang.  
 
 == Publications   
 {{ 
+<div class="infoblock">
+<div class="blockcontent">
 <ul>
-<li><p><a href="" target=&ldquo;blank&rdquo;><b>Validating SMT solvers via Semantic Fusion</b></a> <br />
-Dominik Winterer<sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
-In <i><a href="https://conf.researchr.org/home/pldi-2020" target=&ldquo;blank&rdquo;>Proceedings of PLDI 2020</a></i>, London, UK, June 2020. (conditionally accepted)<br />
+<li><p><a href="" target=&ldquo;blank&rdquo;><b> On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers</b></a> <br />
+<b>Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
+arXiv Preprint <br />  
+<span class="small"><sup>*</sup> Equal Contribution</span><br />
+<li><p><a href="" target=&ldquo;blank&rdquo;><b>Validating SMT Solvers via Semantic Fusion</b></a> <br />
+<b> Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
+In <i><a href="https://conf.researchr.org/home/pldi-2020" target=&ldquo;blank&rdquo;>Proceedings of PLDI 2020</a></i>, London, UK, June 2020. <br />
  <span class="small"><sup>*</sup> Equal Contribution</span><br />
 </p>
 </li>
 </ul>
+</div>
+</div>
 }}
 
 \[[pubs_ai_planning.html Publications in AI Planning]\]

@@ -1,4 +1,10 @@
 /* Default css file for jemdoc. */
+a {
+    color: #0060B6;
+    text-decoration: none;
+ } 
+
+sup {vertical-align:top;  font-size: 0.8em; margin-left:0.05em;}
 .medium{
     font-size:90%
 }
@@ -17,6 +23,7 @@ body {
 	background: white;
         /*color:#333333;*/
         font-family:Computer Modern;
+        font-size: 0.95em;
         /*font-family: Helvetica;*/
         /*font-family: Georgia, serif;*/
        /*font-family: "Times New Roman", Times, serif;*/
@@ -50,8 +57,8 @@ body {
 	background: white;
 	text-align: left;
 	vertical-align: top;
-	min-width: 800px;
-	width: 800px;
+	min-width: 700px;
+	width: 700px;
 }
 
 #layout-menu a {
@@ -78,8 +85,11 @@ a, a > tt {
 a:hover {
 	/*border-bottom: 1px gray dotted;*/
         border-bottom: 1px gray dotted;
-
 }
+a img {
+        border-bottom: 1px gray dotted;
+}
+
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #022b6d;
@@ -264,7 +274,7 @@ p + div.codeblock {
 
 div.codeblock, div.infoblock {
 	margin-right: 0%;
-	margin-top: 1.2em;
+	/*margin-top: 1.2em;*/
 	margin-bottom: 1.3em;
 }
 
@@ -276,12 +286,17 @@ div.blocktitle {
 }
 
 div.blockcontent {
-	border: 1px solid silver;
+	/*border: 1px solid silver;*/
 	padding: 0.3em 0.5em;
 }
 
 div.infoblock > div.blockcontent {
-	background: #ffffee;
+    background: #fffeee
+    /*background:  #e6faff*/
+ /*#ccf5ff*/
+
+    /*#ffeeee;*/
+
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
