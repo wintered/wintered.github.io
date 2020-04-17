@@ -130,6 +130,7 @@ div#subtitle {
 
 em {
 	font-style: italic;
+        
 }
 
 strong {
@@ -249,7 +250,7 @@ ol {
 }
 
 li p, dd p {
-	margin-bottom: 0.3em;
+	margin-bottom: 0.5em;
 }
 
 
@@ -290,6 +291,10 @@ div.infoblock > div.blockcontent {
 
     /*#ffeeee;*/
 
+}
+/* TODO: Only for publications  */
+li.pubs:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
