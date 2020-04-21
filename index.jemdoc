@@ -32,7 +32,7 @@ Currently, I'm developing tools for stress-testing SMT solvers in the
 <div class="infoblock">
 <div class="blockcontent">
 <ul>
-<li class="pubs"><p><a href="http://arxiv.org/abs/2004.08799" target=&ldquo;blank&rdquo;><b> On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers</b></a> <br />
+<li class="pubs"><p><a href="https://arxiv.org/pdf/2004.08799.pdf" target=&ldquo;blank&rdquo;><b> On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers</b></a> <br />
 <b>Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
 CoRR abs/2004.08799, 2020 
  <br />  
