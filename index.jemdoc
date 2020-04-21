@@ -20,7 +20,8 @@ I'm a Ph.D. student advised by Prof. Zhendong Su at ETH Zurich and a member of t
 problems in Programming Languages and Software Engineering. Before, I did 
 research in AI Planning (a branch of symbolic AI).
 
-Currently, I'm doing research on Testing SMT solvers.
+Currently, I'm developing tools for stress-testing SMT solvers in the 
+[https://testsmt.github.io/ Yin-Yang project]. 
 
 #== News 
 #Feb 22, 2020        We open-sourced our SMT solver testing tool YinYang.  
@@ -31,6 +32,11 @@ Currently, I'm doing research on Testing SMT solvers.
 <div class="infoblock">
 <div class="blockcontent">
 <ul>
+<li class="pubs"><p><a href="http://arxiv.org/abs/2004.08799" target=&ldquo;blank&rdquo;><b> On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers</b></a> <br />
+<b>Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
+CoRR abs/2004.08799, 2020 
+ <br />  
+<span class="small"><sup>*</sup> Equal Contribution</span><br />
 <li class="pubs"><p><a href="https://wintered.github.io/papers/winterer-zhang-su-pldi20.pdf" target=&ldquo;blank&rdquo;><b>Validating SMT Solvers via Semantic Fusion</b></a> <br />
 <b> Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
 In <i><a href="https://conf.researchr.org/home/pldi-2020" target=&ldquo;blank&rdquo;>Proceedings of PLDI '20</a></i>, London, UK, June 2020. <br />
