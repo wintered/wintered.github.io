@@ -21,10 +21,11 @@ problems in Programming Languages and Software Engineering. Before, I did
 research in AI Planning (a branch of symbolic AI).
 
 Currently, I'm developing tools for stress-testing SMT solvers in the 
-[https://testsmt.github.io/ Yin-Yang project]. 
+[https://testsmt.github.io/ Yin-Yang project].\n 
+Check out  [https://twitter.com/testsmtsolvers @testsmt] for our recent bug findings in Z3 and CVC4!    
 
-#== News 
-#Feb 22, 2020        We open-sourced our SMT solver testing tool YinYang.  
+== News 
+/Mai 12, 2020/ ~~~~~~~~ I'll be a student volunteer at [https://conf.researchr.org/home/pldi-2020 PLDI '20]
 
 
 == Publications   
@@ -63,6 +64,8 @@ In <i><a href="https://conf.researchr.org/home/pldi-2020" target=&ldquo;blank&rd
 -  [https://swt.informatik.uni-freiburg.de/teaching/WS2016-17/cps-dm  Model Checking], Fall 2016 \n 
 - [https://proglang.informatik.uni-freiburg.de/teaching/info3/2016ws Theoretical Computer Science], Fall 2016 \n
 
+== (Co-)supervised Theses
+- Dylan Wolff (Master thesis, ongoing)   
 
 == Services 
 - Reviewer 
