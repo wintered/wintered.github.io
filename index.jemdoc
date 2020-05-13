@@ -22,11 +22,11 @@ research in AI Planning (a branch of symbolic AI).
 
 Currently, I'm developing tools for stress-testing SMT solvers in the 
 [https://testsmt.github.io/ Yin-Yang project].\n 
-Check out  [https://twitter.com/testsmtsolvers @testsmt] for our recent bug findings in Z3 and CVC4!    
+Check out  [https://twitter.com/testsmtsolvers @testsmt] for our most recent bug findings in Z3 and CVC4!    
 
 == News 
-/Mai 12, 2020/ ~~~~~~~~ I'll be a student volunteer at [https://conf.researchr.org/home/pldi-2020 PLDI '20]
-
+/May 13, 2020/ ~~~~~~~~ Our paper on Semantic Fusion won a distinguished paper award at [https://conf.researchr.org/home/pldi-2020 PLDI '20]! \n
+/May 12, 2020/ ~~~~~~~~ I'll be a student volunteer at [https://conf.researchr.org/home/pldi-2020 PLDI '20]
 
 == Publications   
 {{ 
@@ -36,12 +36,17 @@ Check out  [https://twitter.com/testsmtsolvers @testsmt] for our recent bug find
 <li class="pubs"><p><a href="https://arxiv.org/pdf/2004.08799.pdf" target=&ldquo;blank&rdquo;><b> On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers</b></a> <br />
 <b>Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
 CoRR abs/2004.08799, 2020 
- <br />  
-<span class="small"><sup>*</sup> Equal Contribution</span><br />
+<br>
+<span class="small"><sup>*</sup> Both authors contributed equally.</span><br />
+</p>
 <li class="pubs"><p><a href="https://wintered.github.io/papers/winterer-zhang-su-pldi20.pdf" target=&ldquo;blank&rdquo;><b>Validating SMT Solvers via Semantic Fusion</b></a> <br />
 <b> Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
 In <i><a href="https://conf.researchr.org/home/pldi-2020" target=&ldquo;blank&rdquo;>Proceedings of PLDI '20</a></i>, London, UK, June 2020. <br />
- <span class="small"><sup>*</sup> Equal Contribution</span><br />
+<span class="small"><sup>*</sup> Both authors contributed equally.</span><br />
+<div>
+    <img src="img/award.png" width="36" style="vertical-align:middle">
+    <font color="red"><b>Distinguished Paper Award</b></font>
+</div>
 </p>
 </li>
 </ul>
