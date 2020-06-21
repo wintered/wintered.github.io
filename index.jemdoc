@@ -39,15 +39,20 @@ CoRR abs/2004.08799, 2020
 <br>
 <span class="small"><sup>*</sup> Both authors contributed equally.</span><br />
 </p>
-<li class="pubs"><p><a href="https://wintered.github.io/papers/winterer-zhang-su-pldi20.pdf" target=&ldquo;blank&rdquo;><b>Validating SMT Solvers via Semantic Fusion</b></a> <br />
+<li class="pubs"><p><a href="https://dl.acm.org/doi/pdf/10.1145/3385412.3385985" target=&ldquo;blank&rdquo;><b>Validating SMT Solvers via Semantic Fusion</b></a> <br />
 <b> Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
 In <i><a href="https://conf.researchr.org/home/pldi-2020" target=&ldquo;blank&rdquo;>Proceedings of PLDI '20</a></i>, London, UK, June 2020. <br />
 <span class="small"><sup>*</sup> Both authors contributed equally.</span><br />
 <div>
-    <img src="img/award.png" width="36" style="vertical-align:middle">
+    <img src="img/award.png" width="30" style="vertical-align:middle">
     <font color="red"><b>Distinguished Paper Award</b></font>
 </div>
 </p>
+<p>                                                                             
+  [<a href="https://testsmt.github.io/slides/pldi20-semantic-fusion.pdf"><b>slides</b></a> |
+  <a href="https://www.youtube.com/watch?list=PLyrlk8Xaylp5mvxARtX5ncjy9p4X_Ajwd&time_continue=1&v=JFu8cJYbxBI&feature=emb_logo"><b>video abstract</b></a> |
+  <a href="https://www.youtube.com/watch?v=zkU8WyqWO-Q&feature=youtu.be&t=7686"><b>talk video</b></a>]
+</p>                                                                            
 </li>
 </ul>
 </div>
