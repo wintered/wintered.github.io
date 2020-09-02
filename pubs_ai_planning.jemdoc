@@ -3,30 +3,14 @@
 Prior to my PhD studies at ETH, I did my CS Bachelors and Masters at the 
 [http://www.tf.uni-freiburg.de/en University of Freiburg]. During that time, I did 
 research in [https://en.wikipedia.org/wiki/Automated_planning_and_scheduling Automated Planning] 
-(branch of symbolic AI). The following publications resulted from that time: 
+(branch of symbolic AI). The following publications resulted from this period. 
 \n
 \n
-
-#- [https://aaai.org/ojs/index.php/ICAPS/article/view/3482  Oversubscription Planning as Planning with Multiple Cost Functions] \n
-#Michael Katz, Emil Keyder, Florian Pommerening, Dominik Winterer \n
-#In /[https://icaps19.icaps-conference.org/ Proceedings of ICAPS 2019]/, Berkley, USA, July 2019.\n
-
-#- [https://aaai.org/ocs/index.php/ICAPS/ICAPS18/paper/view/17749 A Novel Iterative Approach to Top-$k$ Planning] \n
-#Michael Katz, Shirin Sohrabi, Octavian Udrea, Dominik Winterer \n
-#In /[https://http://icaps18.icaps-conference.org/ Proceedings of ICAPS 2018]/, Delft, Netherlands, June 2018.
-
-#- [https://aaai.org/ocs/index.php/ICAPS/ICAPS17/paper/view/15760 Stubborn Sets for Fully Observable Nondeterministic Planning] \n  
-#Dominik Winterer, Yusra Alkhazraji, Michael Katz, Martin Wehrle \n
-#In /[http://icaps17.icaps-conference.org/  Proceedings of ICAPS 2017]/, Pittsburgh, USA, June 2017.
-
-#- [https://edoc.unibas.ch/45239/1/466.pdf, Structural Symmetries for Fully Observable Nondeterministic Planning] \n 
-#Dominik Winterer, Martin Wehrle, Michael Katz \n
-#In /[http://ijcai-16.org/ Proceedings of IJCAI 2016]/, New York, USA, July 2016.
 
 {{
 <ul>
 <li><p><a href="https://aaai.org/ojs/index.php/ICAPS/article/view/3482" target=&ldquo;blank&rdquo;><b>Oversubscription Planning as Planning with Multiple Cost Functions</b></a><br />
-Michael Katz, Emil Keyder, Florian Pommerening, Dominik Winterer <br />
+Michael Katz, Emil Keyder, Florian Pommerening, <strong> Dominik Winterer </strong> <br />
 In <i><a href="https://icaps19.icaps-conference.org/" target=&ldquo;blank&rdquo;>Proceedings of ICAPS 2019</a></i>, Berkley, USA, July 2019.<br />
 [<a href="https://doi.org/10.5281/zenodo.3359211">OSP-MCF planner</a>] [<a href="https://doi.org/10.5281/zenodo.2576024">OSP Benchmarks</a>] 
 </p>
@@ -34,7 +18,7 @@ In <i><a href="https://icaps19.icaps-conference.org/" target=&ldquo;blank&rdquo;
 </ul>
 <ul>
 <li><p><a href="https://aaai.org/ocs/index.php/ICAPS/ICAPS18/paper/view/17749" target=&ldquo;blank&rdquo;><b>A Novel Iterative Approach to Top-k Planning</b></a> <br />
-Michael Katz, Shirin Sohrabi, Octavian Udrea, Dominik Winterer <br />
+Michael Katz, Shirin Sohrabi, Octavian Udrea, <strong> Dominik Winterer </strong> <br />
 In <i><a href="https://http://icaps18.icaps-conference.org/" target=&ldquo;blank&rdquo;>Proceedings of ICAPS 2018</a></i>, Delft, Netherlands, June 2018. <br style="line-height: 200%"/>
 [<a href="https://bitbucket.org/wintered/kstar/src/default/">K* code</a>]
 </p>
@@ -42,13 +26,13 @@ In <i><a href="https://http://icaps18.icaps-conference.org/" target=&ldquo;blank
 </ul>
 <ul>
 <li><p><a href="https://ai.dmi.unibas.ch/papers/winterer-et-al-icaps2017.pdf" target=&ldquo;blank&rdquo;><b>Stubborn Sets for Fully Observable Nondeterministic Planning</b></a> <br />  
-Dominik Winterer, Yusra Alkhazraji, Michael Katz, Martin Wehrle <br />
+<strong> Dominik Winterer </strong>, Yusra Alkhazraji, Michael Katz, Martin Wehrle <br />
 In <i><a href="http://icaps17.icaps-conference.org/" target=&ldquo;blank&rdquo;>Proceedings of ICAPS 2017</a></i>, Pittsburgh, USA, June 2017.</p>
 </li>
 </ul>
 <ul>
 <li><p><a href="https://edoc.unibas.ch/45239/1/466.pdf" target=&ldquo;blank&rdquo;><b>Structural Symmetries for Fully Observable Nondeterministic Planning</b></a> <br /> 
-Dominik Winterer, Martin Wehrle, Michael Katz <br />
+<strong> Dominik Winterer </strong>, Martin Wehrle, Michael Katz <br />
 In <i><a href="http://ijcai-16.org/" target=&ldquo;blank&rdquo;>Proceedings of IJCAI 2016</a></i>, New York, USA, July 2016.</p>
 </li>
 </ul>
