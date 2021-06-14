@@ -1,8 +1,9 @@
 /* Default css file for jemdoc. */
 * {
-  margin: 0;
-  line-height: 140%;
+   margin: 0;
 }
+
+
 
 a {
     color: #0060B6;
@@ -25,8 +26,7 @@ table#tlayout {
 }
 
 body {
-
-	background: white;
+        background: #edf3f5;
         font-family: "Lucida Grande";
         font-size: 0.85em;
 	padding-bottom: 8px;
@@ -52,19 +52,20 @@ body {
 }
 
 #layout-content {
-	padding-top: 0.0em;
-	padding-left: 1.0em;
+	padding-top: 1.0em;
+	padding-left: 2.0em;
 	padding-right: 1.0em;
-	border: none;
+        padding-bottom: 1.0em;
 	background: white;
+        margin-left:50px;
 	text-align: left;
 	vertical-align: top;
-	min-width: 700px;
-	width: 750px;
+	min-width: 500px;
+	width: 700px;
 }
 
 #layout-menu a {
-	line-height: 1.5em;
+	line-height: 1.7em;
 	margin-left: 0.5em;
 }
 
@@ -118,8 +119,8 @@ h1, h2, h3 {
         font-family: "Times";
         letter-spacing:0.01em;
         color:#2a2a2a;
-	margin-top: 0.7em;
-	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+	margin-bottom: 0.9em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
@@ -159,11 +160,10 @@ pre {
 }
 
 div#footer {
+        margin-top:20px;
 	font-size: small;
-	/*border-top: 1px solid #c0c0c0;*/
-	padding-top: 0.1em;
-	margin-top: 4.0em;
-	/*color: #c0c0c0;*/
+	color: #c0c0c0;
+        padding-bottom:10px;
 }
 
 div#footer a {
@@ -370,6 +370,9 @@ tr.heading {
 
 img {
 	border: none;
+}
+img.profile_pic { 
+    margin-right:100px
 }
 
 table.imgtable, table.imgtable td {

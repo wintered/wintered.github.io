@@ -3,8 +3,8 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script> }}
 ~~~
 {}{img_left}{img/dw.png}{alt text}{154px}{154px}{}
-Ph.D. Student\n 
-Department of Computer Science\n 
+pPh.D. Student\n
+&nbsp;&nbsp Department of Computer Science\n 
 ETH Zurich, Switzerland\n \n
 *Email*: dominik.winterer@inf.ethz.ch \n
 *Office*: CNB H 103.2\n
@@ -20,6 +20,8 @@ Dominik Winterer is a Ph.D. student advised by [https://people.inf.ethz.ch/suz/ 
 problems in Programming Languages and Software Engineering. Before his Ph.D. studies,  
 Dominik did undergraduate research in Automated Planning (branch of symbolic AI).   
 
+== Testing SMT Solvers 
+
 Currently, Dominik is developing tools for stress-testing SMT solvers in the 
 [https://testsmt.github.io/ Yin-Yang project].\n 
 Check out our twitter account [https://twitter.com/testsmtsolvers @testsmtsolvers] for most recent bug findings in Z3 and CVC4!    
@@ -33,16 +35,9 @@ Check out our twitter account [https://twitter.com/testsmtsolvers @testsmtsolver
 <a href="https://github.com/testsmt/yinyang">  <img src=https://img.shields.io/github/stars/testsmt/yinyang?label=yinyang&style=social></a>
 }}
 
-== News 
-10-30-2020 ~~~~~~~~~ Our SMT Solver testing framework [https://github.com/testsmt/yinyang YinYang] has been officially released on GitHub.\n 
-09-31-2020 ~~~~~~~~~ Our paper on Type-Aware Operator mutation was conditionally accepted at [https://2020.splashcon.org/track/splash-2020-oopsla OOPSLA]! \n 
-05-13-2020 ~~~~~~~~~ Our paper on Semantic Fusion won a distinguished paper award at [https://conf.researchr.org/home/pldi-2020 PLDI 2020]! \n
-05-12-2020 ~~~~~~~~~ I'll be a student volunteer at [https://conf.researchr.org/home/pldi-2020 PLDI 2020].
 
 == Publications   
 {{ 
-<div class="infoblock">
-<div class="blockcontent">
 <ol>
 <li class="pubs"><p><a href="https://dl.acm.org/doi/abs/10.1145/3428261" target=&ldquo;blank&rdquo;> <strong>On the Unusual Effectiveness of Type-Aware Mutations for Testing SMT Solvers</strong></a><br />
 <b>Dominik Winterer</b><sup>*</sup>, Chengyu Zhang<sup>*</sup>, Zhendong Su  <br />
@@ -63,40 +58,40 @@ In <i>
 <div>
     <img src="img/award.png" width="30" style="vertical-align:middle">
     <font color="red"><strong>PLDI Distinguished Paper Award</strong></font>
+    <p> Invited to TOPLAS special issue on PLDI '20</p> 
 </div>
 </p>
 </li>
 </ol>
-</div>
-</div>
 }}
 
-\[[https://wintered.github.io/pubs_ai_planning.html Publications in AI Planning]\]
 
 == Teaching  
 
-/Teaching Assistant at ETH Zurich/   
+@ETH Zurich   
+- [https://lec.inf.ethz.ch/se/2021/ Software Engineering], Spring 2021 (Head TA)
 - [http://www.ds3lab.com/dmdb-2020/ Data Modelling and Databases], Spring 2020 \n 
 - [https://people.inf.ethz.ch/suz/teaching/263-2100-s20.html Research Topics in Software Engineering], Spring 2020, 2021, Fall 2020 \n
-- [https://people.inf.ethz.ch/suz/teaching/252-0210.html Compiler Design], Fall 2019, 2020 \n
+- [https://people.inf.ethz.ch/suz/teaching/252-0210.html Compiler Design], Fall 2019, 2020, 2021 (Head TA)  \n
 
-/Teaching Assistant at University of Konstanz/
-- [https://www.sen.uni-konstanz.de/teaching/current-term/past-terms/winter-term-201819/directed-studies-decision-procedures-for-software-verification/ Decision Procedures] Fall 2018 
+@University of Konstanz
+- [https://www.sen.uni-konstanz.de/teaching/current-term/past-terms/winter-term-201819/directed-studies-decision-procedures-for-software-verification/ Decision Procedures], Fall 2018 
 
-/Student Teaching Assistant at University of Freiburg/
--  [https://swt.informatik.uni-freiburg.de/teaching/WS2016-17/cps-dm  Model Checking] Fall 2016 \n 
-- [https://proglang.informatik.uni-freiburg.de/teaching/info3/2016ws Theoretical Computer Science] Fall 2016 \n
+@University of Freiburg
+- [https://swt.informatik.uni-freiburg.de/teaching/WS2016-17/cps-dm  Model Checking], Fall 2016 \n 
+- [https://proglang.informatik.uni-freiburg.de/teaching/info3/2016ws Theoretical Computer Science], Fall 2016 \n
 
-== (Co-)supervised Theses
-- Mauro Bringolf (Master thesis)
-- Jiwon Park (Bachelor thesis)
-- Dylan Wolff (Master thesis, completed)   
+== Supervised Students 
+- [https://maurobringolf.ch/ Mauro Bringolf] (Master thesis, ongoing)
+- [https://www.linkedin.com/in/jiwon-park-473998170/?originalSubdomain=fr Jiwon Park] (Bachelor thesis, completed)
+- [https://www.linkedin.com/in/dylan-j-wolff/?originalSubdomain=ch Dylan J Wolff] (Master thesis, completed) {{}}Ph.D. student @NUS 
+
+
 
 == Services 
-- Reviewer 
+- Reviewer/Judge Student Research Competition: [https://2021.splashcon.org/committee/splash-2021-SRC-reviewers-judges  OOPSLA '21]
+- Artifact Evaluation Committee Member: [https://conf.researchr.org/track/issta-2021/issta-2021-artifact-evaluation ISSTA '21 ]
+- Reviewer: 
   [https://www.jair.org/index.php/jair JAIR \'17],  [https://aaai.org/Conferences/AAAI-20/ AAAI \'20], [https://aaai.org/Conferences/AAAI-21/ AAAI \'21]
 
-
-- Subreviewer 
-  [http://icaps18.icaps-conference.org/ ICAPS \'18]
 
