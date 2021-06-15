@@ -28,7 +28,8 @@ table#tlayout {
 body {
         background: #edf3f5;
         font-family: "Lucida Grande";
-        font-size: 0.85em;
+        font-size: 0.90em;
+        line-height:1.5;
 	padding-bottom: 8px;
 	margin: 0;
 }
@@ -61,7 +62,7 @@ body {
 	text-align: left;
 	vertical-align: top;
 	min-width: 500px;
-	width: 700px;
+	width: 750px;
 }
 
 #layout-menu a {
