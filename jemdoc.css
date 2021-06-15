@@ -27,6 +27,9 @@ table#tlayout {
 
 body {
         background: #edf3f5;
+        /*color:#504f54;*/
+        /*color:#181818;	*/
+        color:#282828;	
         font-family: "Lucida Grande";
         font-size: 0.90em;
         line-height:1.3;
