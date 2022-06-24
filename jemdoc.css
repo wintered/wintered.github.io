@@ -25,23 +25,23 @@ table#tlayout {
 }
 
 body {
-        background: #F5F5F5;        
+        background: #f4f4f4;
         color:#282828;	
+        /*font-weight:200; */
+        /*letter-spacing: 0.015em;*/
         /*font-family: "Lucida Grande";*/
-        /*font-family:Arial;*/
         font-family:Helvetica;
-        font-size: 0.90em;
+        font-size: 0.92em;
         text-align: justify;
         line-height:130%;
 	padding-bottom: 8px;
-        border: 1px solid #dddddd;
 	margin: 0;
 }
 
 #layout-menu {
 	background: #f6f6f6;
-	border: 1px solid #dddddd;
-	padding-top: 0.2em;
+	border: 2px solid #dddddd;
+	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 1.0em;
@@ -56,15 +56,18 @@ body {
 }
 
 #layout-content {
-	padding-top: 0.0em;
+	padding-top: 1.0em;
 	padding-left: 2.0em;
 	padding-right: 1.0em;
         padding-bottom: 1.0em;
 	background: white;
         margin:auto;
+        margin-top:5px;
 	vertical-align: top;
 	min-width: 500px;
-	width: 750px;
+	width: 760px;
+        border: 1px solid #EEEEEE;
+
 }
 
 #layout-menu a {
@@ -81,9 +84,6 @@ pre, tt {
 	font-family: monaco, monospace;
 }
 
-a, a > tt {
-	/*font-weight: bold;*/
-}
 
 div.menu-item {
 	padding-left: 16px;
@@ -102,7 +102,7 @@ div#toptitle + h2, div#toptitle + h3 {
 }
 
 div#subtitle {
-	margin-top: 0.0em;
+	margin-top: -2.2em;
 	margin-bottom: 0.0em;
 	padding-top: 0em;
 	padding-bottom: 0.1em;
@@ -256,6 +256,7 @@ div.blocktitle {
 }
 
 div.blockcontent {
+	/*border: 1px solid silver;*/
 	padding: 0.3em 0.5em;
 }
 
@@ -361,6 +362,7 @@ td {
 	padding: 2px;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
+	border: 1px solid gray;
 }
 
 table + table {
