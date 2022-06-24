@@ -25,7 +25,7 @@ table#tlayout {
 }
 
 body {
-        background: #edf3f5;
+        background: #F5F5F5;        
         color:#282828;	
         /*font-family: "Lucida Grande";*/
         /*font-family:Arial;*/
@@ -34,13 +34,14 @@ body {
         text-align: justify;
         line-height:130%;
 	padding-bottom: 8px;
+        border: 1px solid #dddddd;
 	margin: 0;
 }
 
 #layout-menu {
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
-	padding-top: 0.5em;
+	padding-top: 0.2em;
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 1.0em;
@@ -55,12 +56,12 @@ body {
 }
 
 #layout-content {
-	padding-top: 1.0em;
+	padding-top: 0.0em;
 	padding-left: 2.0em;
 	padding-right: 1.0em;
         padding-bottom: 1.0em;
 	background: white;
-        margin-left:50px;
+        margin:auto;
 	vertical-align: top;
 	min-width: 500px;
 	width: 750px;
@@ -255,7 +256,6 @@ div.blocktitle {
 }
 
 div.blockcontent {
-	/*border: 1px solid silver;*/
 	padding: 0.3em 0.5em;
 }
 
@@ -361,7 +361,6 @@ td {
 	padding: 2px;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-	border: 1px solid gray;
 }
 
 table + table {
