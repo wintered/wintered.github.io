@@ -18,6 +18,10 @@ sup {vertical-align:top;  font-size: 0.8em; margin-left:0.05em;}
     font-size:80%
 }
 
+#news {
+    font-size:90%
+}
+
 table#tlayout {
 	border: none;
 	border-collapse: separate;
