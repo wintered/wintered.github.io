@@ -1,13 +1,11 @@
-/* Default css file for jemdoc. */
 * {
    margin: 0;
 }
 
-
 a {
     color: #0060B6;
     text-decoration: none;
- } 
+} 
 
 sup {vertical-align:top;  font-size: 0.8em; margin-left:0.05em;}
 .medium{
@@ -31,9 +29,6 @@ table#tlayout {
 body {
         background: #f4f4f4;
         color:#282828;	
-        /*font-weight:200; */
-        /*letter-spacing: 0.015em;*/
-        /*font-family: "Lucida Grande";*/
         font-family:Helvetica;
         font-size: 0.92em;
         text-align: justify;
@@ -97,10 +92,8 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-        /*border-bottom: 2px solid #aaaaaa;*/
 }
 
-/* Reduce space if we begin the page with a title. */
 div#toptitle + h2, div#toptitle + h3 {
 	margin-top: -0.7em;
 }
@@ -177,13 +170,23 @@ div#footer {
         padding-bottom:1.5em;
 }
 
-div#footer a {
-	/*color: #80a0b0;*/
-}
 
-div#footer-text {
+#footer-text {
 	float: right;
 	padding-bottom: 8px;
+	color: #c0c0c0;
+}
+
+ 
+#date{
+        float: left;
+	padding-bottom: 8px;
+	color: #c0c0c0;
+}
+
+#date a {
+	color: #c0c0c0;
+
 }
 
 ul, ol, dl {
@@ -211,12 +214,10 @@ dd > *:first-child {
 
 ul {
 	list-style-position: outside;
-	/*list-style-type: circle;*/
 }
 
 p + ul, p + ol {
 	margin-top: -0.5em;
-        /*line-height:180%;*/
 }
 
 li ul, li ol {
@@ -248,7 +249,6 @@ p + div.codeblock {
 
 div.codeblock, div.infoblock {
 	margin-right: 0%;
-	/*margin-top: 1.2em;*/
 	margin-bottom: 1.3em;
 }
 
@@ -260,7 +260,6 @@ div.blocktitle {
 }
 
 div.blockcontent {
-	/*border: 1px solid silver;*/
 	padding: 0.3em 0.5em;
 }
 
@@ -346,7 +345,6 @@ div#toptitle h1, #layout-content div#toptitle h1 {
 img.eq {
 	padding: 0;
 	padding-left: 0.1em;
-	/*padding-right: 0.1em;*/
 	margin: 0;
 }
 
@@ -388,4 +386,3 @@ img.profile_pic {
 table.imgtable, table.imgtable td {
 	border: none;
 }
-
