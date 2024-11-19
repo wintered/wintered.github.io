@@ -17,7 +17,8 @@ sup {vertical-align:top;  font-size: 0.8em; margin-left:0.05em;}
 }
 
 #news {
-    font-size:90%
+    font-size:80%;
+    font-family: "Arial"; 
 }
 
 table#tlayout {
