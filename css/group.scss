@@ -3,7 +3,7 @@
 
 $gray: #999;
 $light-gray: #EEE;
-$manchester-violet: #64308C;
+$manchester-violet: #0060B6;
 $manchester-violet-20: #C5B4CC;
 $manchester-violet-10: #EDE6F2;
 $manchester-violet-5: #F7F3F8;
@@ -106,13 +106,13 @@ ul.news {
 
 @media (min-width: 576px) {
     .project-people { column-count: 2 }
-    .card-columns   { column-count: 2 }
+    .card-columns   { column-count: 1 }
 }
 
 @media (min-width: 768px) {
     .role.grad      { column-count: 2 }
     .project-people { column-count: 3 }
-    .card-columns   { column-count: 3 }
+    .card-columns   { column-count: 1 }
 }
 
 .title img {
@@ -204,7 +204,11 @@ li {
     font-size:83%; 
 }
 .shortnews {
-    margin-bottom:-10px;    
+    margin-bottom:-12px;    
 }
 
+h4 {
+  font-family: "Times";
+  color:$manchester-violet;
+}
 
