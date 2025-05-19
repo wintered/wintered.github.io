@@ -9,6 +9,7 @@
 
 <div class="card">
     <div class="card-body">
+        <div class="project-logo">
         {% if project.image %}
             {% assign imgurl = project.image %}
             {% capture init %}{{ project.image | slice: 0,1 }}{% endcapture %}
@@ -19,6 +20,8 @@
                 <img class="img-fluid mb-3" src="{{imgurl}}" alt="{{project.title}}"/>
             </a>
         {% endif %}
+        </div>
+        <div class="card-text">
         {% if project.notitle != true %}
             <h4 class="card-title">
                 {{  project.title }}
@@ -29,11 +32,11 @@
                 {{  project.subtitle }}
             </h6>
         {% endif %}
-        <div class="card-text">
+
             {{ project.description | markdownify }}
         </div>
         {% if project.no-link != true or project.link %}
-            <a href="{{ proj-url }}"> Read more &raquo;</a>
+        <!-- <a href="{{ proj-url }}"> Read more &raquo;</a> -->
         {% endif %}
     </div>
     {% if project.people %}

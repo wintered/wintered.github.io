@@ -44,7 +44,7 @@ a {
 .footer {
     padding-bottom: 5;
     color: $gray;
-    border-top: 1px solid $light-gray;
+    //border-top: 1px solid $light-gray;
     text-align: right;
     font-size: 0.8em;
 
@@ -208,7 +208,34 @@ li {
 }
 
 h4 {
-  font-family: "Times";
-  color:$manchester-violet;
+    font-family: "Times";
+    color:$manchester-violet;
 }
 
+.card-text{ 
+    display: block;
+    width: 60%
+}
+
+.project-logo {
+    display: block;
+    width: 30%;
+}
+
+.card-body {
+    display: flex;
+    align-items: flex-start; /* or center if you want vertical centering */
+    gap: 1rem; /* space between image and text */
+    flex-wrap: wrap; /* optional: makes it responsive */
+    line-height:130%;
+    text-align: justify
+}
+
+
+.project-logo img {
+    //max-width: 200px; [> adjust image size as needed <]
+    width:70%
+}
+.card-text {
+    flex: 1; /* makes the text take remaining space */
+}
