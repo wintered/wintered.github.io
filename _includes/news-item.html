@@ -8,7 +8,6 @@
 {% endif %}
 
 {% capture news %}
-    <div>
         {% if post.shortnews %}
             {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
         {% else %}
@@ -17,12 +16,11 @@
             <br>
             <a href="{{ site.base }}{{ post.url }}"> Read more &raquo;</a>
         {% endif %}
-    </div>
 {% endcapture %}
 
 {% capture header %}
 <span class="fa fa-fw fa-{{ icon }}"></span>
-<span class="date">{{ post.date | date: '%B, %Y' }}</span>
+<span class="date">{{ post.date | date: '%B %Y' }}</span>
 {% endcapture %}
 
 <li class="{{ class }}">

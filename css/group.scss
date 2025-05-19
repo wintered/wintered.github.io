@@ -16,7 +16,7 @@ body {
     font-family:Helvetica;
     background: #f4f4f4;
     padding: 20px;
-
+    font-size: 90%;
 }
 
 .nav-link.active {
@@ -193,4 +193,8 @@ li.nav-link active {
 li {
     margin-bottom: 4px; 
     padding: 0;        
+}
+
+.list-unstyled {
+    font-size: 85%
 }
