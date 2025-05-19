@@ -1,0 +1,196 @@
+---
+---
+
+$gray: #999;
+$light-gray: #EEE;
+$manchester-violet: #64308C;
+$manchester-violet-20: #C5B4CC;
+$manchester-violet-10: #EDE6F2;
+$manchester-violet-5: #F7F3F8;
+$manchester-yellow: #FFCC33;
+
+
+
+/* Space out content a bit */
+body {
+    font-family:Helvetica;
+    background: #f4f4f4;
+    padding: 20px;
+
+}
+
+.nav-link.active {
+  background-color: $manchester-violet !important;
+  //background-color: rgb(87, 19, 126) !important;
+}
+
+a {
+  color: $manchester-violet;
+  text-decoration: none;
+
+  &:hover {
+    color: $manchester-violet;
+    text-decoration: underline;
+  }
+}
+
+.header {
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer {
+    padding-bottom: 5;
+    color: $gray;
+    border-top: 1px solid $light-gray;
+    text-align: right;
+    font-size: 0.8em;
+
+    a:link, a:visited {
+        color: $gray;
+    }
+}
+
+.fa {
+    color: $gray;
+}
+a > .fa {
+    // make sure that font-awesome icons are underlined in links
+    display: inline;
+}
+
+ @media (min-width: 768px) { 
+     .container { 
+         max-width: 800px; 
+     } 
+ } 
+.container {
+    background-color:white;
+}
+/* Jumbotron */
+.jumbotron {
+    text-align: justify;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    font-size: 125%
+}
+
+.jumbotron-green{
+    background-color:white;
+    font-size:80%;
+    text-align:left;
+    background-color:#F2F7F1
+}
+
+/* Group logo */
+#logo {
+    height: 260px;
+    margin: 16px 0 32px 0;
+}
+
+/* Front page news. */
+ul.news {
+
+    .date {
+        color: $gray;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    > li {
+        margin-top: 1em;
+    }
+}
+
+@media (min-width: 576px) {
+    .project-people { column-count: 2 }
+    .card-columns   { column-count: 2 }
+}
+
+@media (min-width: 768px) {
+    .role.grad      { column-count: 2 }
+    .project-people { column-count: 3 }
+    .card-columns   { column-count: 3 }
+}
+
+.title img {
+    max-width: 50%;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.profile {
+    object-fit: cover; // makes sure it's cropped
+}
+
+.noprofile {
+    circle {
+        fill: $light-gray;
+    }
+    text {
+        font-weight: 700;
+        fill: white;
+    }
+}
+
+.card {
+
+    .profile {
+        height: 40px;
+        width: 40px;
+        margin: 3px;
+    }
+
+    .card-footer { padding: 0.5em }
+}
+
+.person {
+
+    margin-bottom: 10px;
+
+    .profile {
+        height: 70px;
+        width: 70px;
+    }
+
+    .bio {
+        color: $gray;
+    }
+
+    .person-name {
+        margin: 0;
+    }
+}
+
+.person-without-image {
+    margin: 0;
+
+    .bio {
+        margin-left: 1em;
+    }
+}
+
+svg {
+    // make the alignment just like img from bootstrap's reboot.scss
+    vertical-align: middle;
+}
+
+h1,h2,h3 {
+    font-family: "Times";
+    letter-spacing:0.01em;
+    color:#2a2a2a;
+} 
+
+
+li.nav-link active { 
+    background-color: black
+}
+
+li {
+    margin-bottom: 4px; 
+    padding: 0;        
+}

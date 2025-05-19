@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ site.name }}: {{ page.title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{{ site.base }}/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ site.base }}/css/group.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<style>
+
+
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex
+                        flex-column
+                        flex-md-row">
+                <!-- left column -->
+                <div>
+                    <img src="{{ site.base }}/img/headshot.jpg"  alt="Headshot Dominik Winterer" id="logo">
+                </div>
+                <!-- right column -->
+                <div style="text-align: left; margin-top:20px">
+                    <div style="margin-left:50px">
+                    <h2> <strong> Dominik Winterer </strong> </h2>
+                    <p>
+                    Incoming Lecturer (Assistant Professor)<br>
+                    <a href=" ">Formal Methods Engineering Lab </a><br>
+                    Systems and Software Security Group<br>
+                    Department of Computer Science <br>
+                    University of Manchester, United Kingdom<br><br>
+                    <strong>Email</strong>: <a href="mailto:dominik.winterer@inf.ethz.ch">dominik.winterer@inf.ethz.ch</a><br>
+                    <a href="mailto:domwinterer@gmail.com">domwinterer@gmail.com</a>
+                    <br>
+                    <!--<strong>Office</strong>: CNB H 108<br></p>-->
+                    </p>
+                        <div class="social-icons" style="display: flex; gap: 12px; align-items: center;">
+                            <!-- Google Scholar -->
+                            <a href="https://scholar.google.com/citations?user=XmXhctUAAAAJ&hl=de" target="_blank" title="Google Scholar" rel="noopener noreferrer">
+                            <img src="https://cdn.simpleicons.org/googlescholar/4285F4" alt="Google Scholar" style="height: 24px;"></a>
+                            <!-- Bluesky -->
+                            <a href="https://bsky.app/profile/dominikwinterer.bsky.social" target="_blank" title="Bluesky" rel="noopener noreferrer">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/bluesky.svg" alt="Bluesky" style="height: 24px;"></a>
+                             <!-- X (formerly Twitter) -->
+                            <a href="https://twitter.com/DominikWinterer" target="_blank" title="X (Twitter)" rel="noopener noreferrer">
+                            <img src="https://cdn.simpleicons.org/x/000000" alt="X (Twitter)" style="height: 24px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    <div style="border-bottom:1px solid #EEE; margin-bottom:10px; margin-top:-20px">
+                    <ul class="nav nav-pills justify-content-center">
+                        {% assign shorturl = page.url | replace:'.html','' | replace:'index','' %}
+                        {% for item in site.navigation %}
+                            {% assign itemshorturl = item.link | replace:'.html','' %}
+                            {% assign maybe-active = '' %}
+                            {% if item.title == 'Research' and page.layout == 'project' %}
+                                {% assign maybe-active = 'active' %}
+                            {% endif %}
+                            {% if itemshorturl == shorturl or is-research %}
+                                {% assign maybe-active = 'active' %}
+                            {% endif %}
+                            <li class="nav-item" >
+                                <a class="nav-link {{ maybe-active }}"
+                                href="{{ site.base }}{{ item.link }}">
+                                    {{ item.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    </div>
+            {% if page.image %}
+                <img src="{{ page.image }}"
+                     alt="{{ page.title }}"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+            {% endif %}
+
+            {% if page.notitle != true %}
+                <h1>{{ page.title }}</h1>
+            {% endif %}
+
+            {{ content }}
+
+            <div class="footer">
+                <p>last updated: {{ site.time | date: "%B %d, %Y" }}</p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="{{ site.base }}/js/srcset-polyfill.js"></script>
+    </body>
+</html>

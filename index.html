@@ -1,89 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
-<head>
-  <meta name="generator" content=
-  "HTML Tidy for HTML5 for Apple macOS version 5.8.0">
-  <meta name="generator" content=
-  "jemdoc, see http://jemdoc.jaboc.net/">
-  <meta http-equiv="Content-Type" content=
-  "text/html; charset=utf-8">
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="apple-touch-icon" sizes="180x180" href=
-  "img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href=
-  "img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href=
-  "img/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <title>Dominik Winterer</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+---
+layout: default
+title: Home
+notitle: true
 
-  <script async src=
-  "https://www.googletagmanager.com/gtag/js?id=G-CZ000LH69V" type=
-  "text/javascript"></script>
-  <script type="text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CZ000LH69V');
-  </script><!-- MathJax -->
+# groups of columns of {roles: list, width: num, image: bool}
+role-tables:
+- - roles: [faculty, postdoc, staff]
+    width: 4
+    image: true
+  - roles: [grad]
+    width: 8
+    image: true
+- - roles: [collab, ugrad, ugrad-alum]
+    width: 5
+    image: false
+  - roles: [alum]
+    width: 7
+    image: false
 
-  <script src=
-  'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML'
-  async type="text/javascript"></script>
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-          TeX: { equationNumbers: { autoNumber: "AMS" } }
-  });
-  </script><!-- End MathJax -->
-</head>
-<body>
-  <div id="layout-content">
-    <div id="toptitle">
-      <div id="subtitle">
-        <!-- Place this tag in your head or just before your close body tag. -->
-        <script async defer src=
-        "https://buttons.github.io/buttons.js" type=
-        "text/javascript"></script>
-      </div>
-    </div>
-    <table class="imgtable">
-      <tr>
-        <td><img src="img/faculty.jpg" alt="profile_pic" style=
-        "margin-top:20px;margin-left:0px;margin-right:50px; height:280px" class=
-        "profile_pic">&nbsp;</td>
-        <td style="text-align:left">
-          <br>
-          <h1>Dominik Winterer</h1>
-          Postdoctoral Researcher <br>
-          Automated Reasoning & Verification Group <br>
-          Department of Computer Science  <br>
-        ETH Zurich, Switzerland <br>
-          <br>
-          <b>Email</b>: <a href=
-          "mailto:dominik.winterer@inf.ethz.ch">dominik.winterer@inf.ethz.ch</a><br>
-
-          <b>Office</b>: CNB H 108<br></p>
-          <p><a href=
-          "https://scholar.google.com/citations?user=XmXhctUAAAAJ&amp;hl=en">
-          <img src="img/google_scholar.jpg" alt="google_scholar"
-          height="25"></a> <a href=
-          "https://twitter.com/DominikWinterer"><img src=
-          "img/X.png" alt="twitter" height="20"></a> <a href=
-          "https://github.com/wintered"><img src="img/github.png"
-          alt="github" height="25"></a></p><span style=
-          "color:red">
-          <!--<strong>I am on the academic job-->
-          <!--market!</strong></span><br>-->
-          <!--[<a href=-->
-          <!--"https://wintered.github.io/rs.pdf">Research-->
-          <!--Statement</a>] [<a href=-->
-          <!--"https://wintered.github.io/ts.pdf">Teaching-->
-          <!--Statement</a>]<br>-->
-        </td>
-      </tr>
-    </table><br>
-    <h2>About</h2>I am a postdoctoral researcher at the Institute
+---
+<section>
+    <h3 id="about">About</h3>
+     I am a postdoctoral researcher at the Institute
     for Programming Languages and Systems at ETH Zurich. I will be
     working with <a href=
     "https://people.inf.ethz.ch/mkokologiann/">Prof. Michalis
@@ -101,473 +39,185 @@
     to February 2024, I was interning in the Automated Reasoning
     Group of AWS where I applied and further developed testing
     techniques for SMT solvers, and in the summer of 2017, I
-    interned at IBM Research Yorktown Heights.
-    <hr style="height:10pt; visibility:hidden;">
+    interned at IBM Research Yorktown Heights.<br>
+    <br>
     My primary research goal is <b>to make SMT solvers more robust,
     reliable, and performant</b> through principled, general
     <b>automated testing techniques</b>. My tools have found 1,800+
     bugs in the flagship SMT solvers Z3 and CVC5; 500+ are critical
-    soundness bugs. 
-    <!--<hr style="height:10pt; visibility:hidden;">-->
-     <!--I am co-organizer of the <a href=-->
-     
-    <!--"https://ast.ethz.ch/future-of-software-seminar.html">Future of-->
-     <!--Software Seminar</a> at ETH Zurich.-->
-     
-    <!--From October 2023 to February 2024, I was interning in the-->
-     
-    <!--Automated Reasoning Group of AWS where I applied and further-->
-     
-    <!--developed testing techniques for SMT solvers in a real-world-->
-     <!--production setup.-->
-    <h2>News</h2>
-    <div id="news">
-    <b>Mar '25&nbsp;</b> <i>Excited to be on the Program Committee 
-          of <a href="https://fuzzingworkshop.github.io/">FUZZING '25!</a></i><br>
+    soundness bugs.
+</section>
+<section>
+    <h3 id="news">News</h3>
+    <ul class="news list-unstyled">
+        {% for post in site.posts limit: site.front_page_news %}
+            {% include news-item.html item=post %}
+        {% endfor %}
+    </ul>
+    {% assign numposts = site.posts | size %}
+    {% if numposts >= 1 %}
+        <!--<p>-->
+            <!--<span class="fa fa-fw fa-history"></span>-->
+            <!--<a href="{{ site.base }}/blog.html">Older news</a>-->
+        <!--</p>-->
+    {% endif %}
+</section>
 
-      <b>Feb '25&nbsp;</b> <i>Excited to be on the Program Committee 
-          of <a href="https://conf.researchr.org/home/ase-2025">ASE'25!</a></i><br>
 
-      <b>Jan '25 &nbsp;</b> <i>Excited to be on the Program Committee 
-          of <a href="https://conferences.i-cav.org/2025/">CAV '25!</a></i><br>
-      <b>Dec '24 &nbsp;</b> <i>Excited to be co-organizing the SMT
-      Competition '25!</i><br>
-      <b>Nov '24 &nbsp;</b> <i>Started my PostDoc in the Automated
-      Reasoning &amp; Verification group headed by <a href=
-      "https://people.inf.ethz.ch/mkokologiann/">Prof. Michalis
-      Kokologiannakis</a></i>!<br>
-      <b>Oct '24 &nbsp;</b> <i>Released enumerative testing tool
-      <a href="https://github.com/wintered/ET">ET v1.0.0!</a><br>
-      <b>Sep '24 &nbsp;</b>Invited to give a talk in the <a href=
-      "https://si.usi.ch/seminars/">SI Seminar Series</a> at USI
-      Lugano on Feb 27, 2025<br>
-      <b>Sep '24 &nbsp;</b>I graduated my Ph.D. from ETH Zurich!
-      <a href=
-      "https://x.com/DominikWinterer/status/1839753068327645184">[X
-      post]</a><br>
-      <b>Jun '24&nbsp;</b> Work on formula enumeration to
-      understand SMT solvers' correctness &amp; performance cond.
-      accepted at OOPSLA '24!<br>
-<!--      <b>Apr '24&nbsp;</b> I was invited to serve as a reviewer for-->
-      <!--ACM Transactions on Software Engineering and Methodology!<br>-->
-      <!--<b>Feb '24&nbsp;</b> I was invited to give talks at UPenn and-->
-      <!--Harvard!<br>-->
-      <!--<b>Sep '23 &nbsp;</b> I'll be interning in the Automated-->
-      <!--Reasoning Group of AWS in NY beginning October! <a href=-->
-      <!--""></a><br>-->
-      <!--<b>Aug '23 &nbsp;</b> Invited to serve as Artifact Evaluation-->
-      <!--Co-Chair of <a href="">ISSTA 2024</a>!<br>-->
-      <!--<b>Jan '23 &nbsp;</b> <i>I'll be giving an invited talk at-->
-       
-      <!--UCSC's <a href="https://lsd.ucsc.edu/lsd-seminar/2023wi/">LSD-->
-       <!--seminar</a></i><br>-->
-       
-      <!--<b>Dec '22 &nbsp;</b><i>Invited to serve on the Program-->
-       <!--Committee of <a href=-->
-       
-      <!--"https://conf.researchr.org/home/icse-2024">ICSE '24</a>-->
-       <!--(demo track)!</i><br>-->
-       
-      <!--<b>Nov '22 &nbsp;</b> <i>I'll be giving an invited talk at-->
-       <!--USC Software Seminar!</i><br>-->
-       
-      <!--<b>Sep '22 &nbsp;</b> <i>Invited to serve on the program-->
-       
-      <!--committee of <a href="http://metwiki.net/MET22/">MET2023</a>-->
-       <!--collocated with ICSE</i><br>--></i>
-    </div>
-    <h2>Research Projects</h2>
-    <table class="imgtable">
-      <tr>
-        <td><img src="img/symbol.png" alt="symbol" height="200"
-        style="margin-right:15px"></td>
-        <td>
-          <b><a href="https://testsmt.github.io/">Project Yin-Yang
-          for SMT Solver Testing.</a></b> Satisfiability Modulo
-          Theory (SMT) solvers are foundational tools for many
-          subareas of computer science, including formal
-          verification, programming languages, and software
-          engineering. Their reliability and robustness are
-          crucial, especially for the safety-critical domains.
-          However, effectively validating SMT solvers has been a
-          longstanding challenge. The goal of Project Yin-Yang is
-          to develop novel, effective, practical methods and
-          techniques to help make SMT solvers more reliable,
-          powerful, and usable.<br>
-          <br>
-          <div style="text-align:center">
-            [Z3/CVC4/5 Bugs: <b>1,825</b> (total) / <b>1,333</b>
-            (fixed)]<br>
-            [Reports: <a href=
-            "https://testsmt.github.io/yinyang_bugs.html">YinYang</a>,
-            <a href=
-            "https://testsmt.github.io/opfuzz_bugs.html">OpFuzz</a>,<a href="https://testsmt.github.io/typefuzz_bugs.html">TypeFuzz</a>,
-            <a href=
-            "https://testsmt.github.io/janus.html">Janus</a>]<br>
-            <br>
-            <a href="https://github.com/testsmt/yinyang"><img src=
-            "https://img.shields.io/github/stars/testsmt/yinyang?label=yinyang&amp;style=social"
-            alt="yinyang"></a> <a href=
-            "https://twitter.com/testsmtsolvers">&nbsp;<img src=
-            "https://img.shields.io/twitter/url?label=%40testsmtsolvers&amp;style=social&amp;url=https%3A%2F%2Ftwitter.com%2Ftestsmtsolvers"
-            height="20" alt="shield"></a><br>
-            <br>
-            <!--<a href=""> ⭐ <span style="color:red">Google Open Source Peer Bonus</span></a><br>-->
-             
-            <!--<a href=""> 🏆 <span style="color:red">Amazon Research Award</span></a>-->
-          </div>
-        </td>
-      </tr>
-    </table><br>
-    <h2>Selected Publications (<a href=
-    "https://scholar.google.com/citations?user=XmXhctUAAAAJ&amp;hl=en">all</a>)</h2>
-    <ol>
-      <li class="pubs">
-        <p><a href=
-        "https://wintered.github.io/papers/winterer-su-oopsla2024.pdf">
-        <strong>Validating SMT Solvers for Correctness and
-        Performance via Grammar-based Enumeration</strong></a><br>
-        <b>Dominik Winterer</b>, Zhendong Su<br>
-        In <i><a a=
-        "https://wintered.github.io/papers/winterer-su-oopsla2024.pdf"
-        href="">Proceedings of SPLASH/OOPSLA 2024</a></i><br></p>
-        <p>&nbsp; ⭐ <span style="color:red">Bounded Validation of
-        the SMT Solvers Z3 and cvc5</span></p>
-      </li>
-      <li class="pubs">
-        <p><a href=
-        "https://dl.acm.org/doi/abs/10.1145/3551349.3560435"><strong>
-        Finding and Understanding Incompleteness Bugs in SMT
-        Solvers</strong></a><br>
-        Mauro Bringolf, <b>Dominik Winterer</b>, Zhendong Su<br>
-        In <i><a href=
-        "https://conf.researchr.org/home/ase-2022">Proceedings of
-        ASE 2022</a></i> &nbsp; [<a href=
-        "https://testsmt.github.io/slides/ase22_finding_and_understanding_incompleteness_bugs.pdf">slides</a>
-        / <a href=
-        "https://github.com/testsmt/janus">tool</a>]<br></p>
-      </li>
-      <li class="pubs">
-        <p><a href=
-        "https://dl.acm.org/doi/abs/10.1145/3485529?af=R"><strong>Generative
-        Type-Aware Mutation for Testing SMT Solvers</strong></a>
-        <img alt="badge_available" src=
-        "https://www.acm.org/binaries/content/gallery/acm/publications/large-replication-badges/artifacts_available.jpg"
-        height="20"> <img alt="badge_reusalbe" src=
-        "https://www.acm.org/binaries/content/gallery/acm/publications/large-replication-badges/artifacts_evaluated_reusable.jpg"
-        height="20"> <img alt="badge_functional" src=
-        "https://www.acm.org/binaries/content/gallery/acm/publications/large-replication-badges/artifacts_evaluated_functional.jpg"
-        height="20"><br>
-        Jiwon Park<sup>*</sup>, <b>Dominik
-        Winterer</b><sup>*</sup>, Chengyu Zhang, Zhendong Su<br>
-        In <i><a href="https://2021.splashcon.org/">Proceedings of
-        SPLASH/OOPSLA 2021</a></i> &nbsp; [<a href=
-        "https://testsmt.github.io/slides/oopsla21-generative-type-aware-mutation.pdf">slides</a>
-        / <a href=
-        "https://www.youtube.com/watch?v=Jxc4N4mrm8o&amp;t=2s&amp;ab_channel=ACMSIGPLAN">
-        video abstract</a>]<br>
-        <span class="small"><sup>*</sup> Both authors contributed
-        equally.</span></p>
-      </li>
-      <li class="pubs">
-        <p><a href=
-        "https://dl.acm.org/doi/abs/10.1145/3428261"><strong>On the
-        Unusual Effectiveness of Type-Aware Mutations for Testing
-        SMT Solvers</strong></a><br>
-        <b>Dominik Winterer</b><sup>*</sup>, Chengyu
-        Zhang<sup>*</sup>, Zhendong Su<br>
-        In <i><a href=
-        "https://2020.splashcon.org/track/splash-2020-oopsla">Proceedings
-        of SPLASH/OOPSLA 2020</a></i> &nbsp; [<a href=
-        "https://testsmt.github.io/slides/oopsla20-type-aware-op-mutation.pdf">slides</a>
-        / <a href=
-        "https://www.youtube.com/watch?v=uCEN3AnBYC0&amp;feature=emb_title&amp;ab_channel=DominikWinterer">
-        video abstract</a>]<br>
-        <span class="small"><sup>*</sup> Both authors contributed
-        equally.</span></p>
-        <p>&nbsp; ⭐ <span style="color:red">1,000+ bugs in the SMT
-        Solvers Z3 and CVC4</span></p>
-      </li>
-      <li class="pubs">
-        <p><a href=
-        "https://dl.acm.org/doi/pdf/10.1145/3385412.3385985"><strong>
-        Validating SMT Solvers via Semantic Fusion</strong></a><br>
-        <b>Dominik Winterer</b><sup>*</sup>, Chengyu
-        Zhang<sup>*</sup>, Zhendong Su<br>
-        In <i><a href=
-        "https://conf.researchr.org/home/pldi-2020">Proceedings of
-        PLDI 2020</a></i> &nbsp; [<a href=
-        "https://testsmt.github.io/slides/pldi20-semantic-fusion.pdf">slides</a>
-        / <a href=
-        "https://www.youtube.com/watch?list=PLyrlk8Xaylp5mvxARtX5ncjy9p4X_Ajwd&amp;time_continue=1&amp;v=JFu8cJYbxBI&amp;feature=emb_logo">
-        video abstract</a>]<br>
-        <span class="small"><sup>*</sup> Both authors contributed
-        equally.</span><br></p>
-        <div>
-          🏆 <span style="color:red"><strong>ACM Distinguished Paper
-          Award</strong></span>
-          <p>⭐ <span style="color:red">Invited to ACM TOPLAS
-          Special Issue</span></p>
-        </div>
-      </li>
-    </ol>
-    <h2>Awards and Grants</h2>
+<h3 id="projects">Research Projects</h3>
+</section>
+
+
+<section>
+<h3 id="dissertation">Dissertation</h3>
+</section>
+
+<section>
+<h3 id="publications">Selected Publications</h3>
+</section>
+
+<section>
+<h3>Awards and Grants</h3>
+<ul>
+  <li>Heidelberg Laureate Forum 2022</li>
+  <li><a href="https://inf.ethz.ch/news-and-events/spotlights/infk-news-channel/2022/07/amazon-research-award-zhendong-su.html">Amazon Research Award Fall 2021</a> (Co-PI)</li>
+  <li><a href="https://opensource.googleblog.com/2021/04/announcing-first-group-of-google-open-source-peer-bonus-winners.html#:~:text=The%20Google%20Open%20Source%20Peer,group%20of%20winners%20in%202021!">Google Open Source Peers Bonus 2021</a> (for yinyang)</li>
+  <li>Invited to ACM TOPLAS Special Issue</li>
+  <li><a href="https://conf.researchr.org/home/pldi-2020">ACM Distinguished Paper Award (PLDI '20)</a></li>
+  <li>IJCAI '16 Travel Grant Award</li>
+</ul>
+</section>
+
+<section>
+<h3>Supervised Students</h3>
+<ul>
+  <li><a href="">Pasquale Jordan</a> (MSc. thesis, completed)</li>
+  <li><a href="">Andrei Zhukov</a> (Practical work, completed)</li>
+  <li><a href="https://theauk.github.io/">Thea Kjeldsmark</a> (Intern, completed)</li>
+  <li><a href="">Lu Maltsis</a> (Bachelor thesis, completed)</li>
+  <li>
+    <a href="">Violet Szabo;</a> (Intern, external thesis, completed)
     <ul>
-      <li>
-        <p>Heidelberg Laureate Forum 2022</p>
-      </li>
-      <li>
-        <p><a href=
-        "https://inf.ethz.ch/news-and-events/spotlights/infk-news-channel/2022/07/amazon-research-award-zhendong-su.html">
-        Amazon Research Award Fall 2021</a>(Co-PI)</p>
-      </li>
-      <li>
-        <p><a href=
-        "https://opensource.googleblog.com/2021/04/announcing-first-group-of-google-open-source-peer-bonus-winners.html#:~:text=The%20Google%20Open%20Source%20Peer,group%20of%20winners%20in%202021!">
-        Google Open Source Peers Bonus 2021</a> (for yinyang)</p>
-      </li>
-      <li>
-        <p>Invited to ACM TOPLAS Special Issue</p>
-      </li>
-      <li>
-        <p><a href="https://conf.researchr.org/home/pldi-2020">ACM
-        Distinguished Paper Award (PLDI '20)</a></p>
-      </li>
-      <li>
-        <p>IJCAI '16 Travel Grant Award</p>
-      </li>
+      <li>POPL '24 SRC paper</li>
+      <li>first author on work on compilation hardness of PLs [<a href="https://arxiv.org/pdf/2406.04778">preprint</a>]</li>
     </ul>
-    <h2>Supervised Students</h2>
+  </li>
+  <li><a href="">Marc Andriu Carigiet</a> (Bachelor thesis, completed)</li>
+  <li><a href="">Michael Mörschell</a> (Bachelor thesis, completed) → MSc. student @ETH Zurich</li>
+  <li>
+    <a href="https://www.linkedin.com/in/jiwon-park-473998170/?originalSubdomain=fr">Jiwon Park</a> (Bachelor thesis + Internship, completed) &nbsp; → Ph.D. student @UC Berkeley
     <ul>
-      <li>
-        <p><a href="">Pasquale Jordan</a> (MSc. thesis,
-        completed)</p>
-      </li>
-      <li>
-        <p><a href="">Andrei Zhukov</a> (Practical work,
-        completed)</p>
-      </li>
-      <li>
-        <p><a href="https://theauk.github.io/">Thea Kjeldsmark</a>
-        (Intern, completed)</p>
-      </li>
-      <li>
-        <p><a href="">Luis Maltsis</a> (Bachelor thesis,
-        completed)</p>
-      </li>
-      <li>
-        <p><a href="">Violet Szabo;</a> (Intern, external thesis,
-        completed)</p>
-        <ul>
-          <li>POPL '24 SRC paper</li>
-          <li>first author on work on compilation hardness of PLs
-          [<a href=
-          "https://arxiv.org/pdf/2406.04778">preprint</a>]</li>
-        </ul>
-      </li>
-      <li>
-        <p><a href="">Marc Andriu Carigiet</a> (Bachelor thesis,
-        completed)</p>
-      </li>
-      <li>
-        <p><a href="">Michael Mörschell</a> (Bachelor thesis,
-        completed) → MSc. student @ETH Zurich</p>
-      </li>
-      <li>
-        <p><a href=
-        "https://www.linkedin.com/in/jiwon-park-473998170/?originalSubdomain=fr">
-        Jiwon Park</a> (Bachelor thesis + Internship, completed)
-        &nbsp; → Ph.D. student @UC Berkeley</p>
-        <ul>
-          <li>2nd place@<a href=
-          "https://twitter.com/Sharma__Tushar/status/1431224348426129416">FSE
-          '21 SRC</a></li>
-          <li>Co-first author of OOPSLA '21 paper</li>
-        </ul>
-      </li>
-      <li>
-        <p><a href="https://maurobringolf.ch/">Mauro Bringolf</a>
-        (Master thesis, completed) → Software Engineer @
-        <s>University of St. Gallen</s> Digitec Galaxus</p>
-        <ul>
-          <li>First author of ASE'22 paper</li>
-        </ul>
-      </li>
-      <li>
-        <p><a href=
-        "https://www.linkedin.com/in/dylan-j-wolff/?originalSubdomain=ch">
-        Dylan J Wolff</a> (Master thesis, completed) → Ph.D.
-        student @National University of Singapore</p>
-        <ul>
-          <li>POPL '21 <a href=
-          "https://dylanjwolff.com/assets/pdf/poplsrc.pdf">SRC
-          paper</a></li>
-        </ul>
-      </li>
-      <li>
-        <p><a href=
-        "https://www.linkedin.com/in/altin-alickaj-48210b177/?originalSubdomain=ch">
-        Altin Alickaj</a> (Practical work, completed) &nbsp; →
-        Oracle labs</p>
-      </li>
+      <li>2nd place@<a href="https://twitter.com/Sharma__Tushar/status/1431224348426129416">FSE '21 SRC</a></li>
+      <li>Co-first author of OOPSLA '21 paper</li>
     </ul>
-    <h2>Invited Talks</h2>
+  </li>
+  <li>
+    <a href="https://maurobringolf.ch/">Mauro Bringolf</a> (MSc. thesis, completed) → Software Engineer @ <s>University of St. Gallen</s> Digitec 
     <ul>
-      <li>
-        <p>Solidifying SMT Solvers Through Automated Testing<br>
-        <i>@Harvard PL Seminar. Mar 2024</i>.</p>
-      </li>
-      <li>
-        <p>Solidifying SMT Solvers Through Automated Testing<br>
-        <i>@UPenn PLClub. Feb 2024</i>.</p>
-      </li>
-      <li>
-        <p>Directed Testing of a String Solver<br>
-        <i>@Amazon Webservices, Feb 2024</i>.</p>
-      </li>
-      <li>
-        <p>Solidifying SMT Solvers<br>
-        <i>@UC Berkeley Programming Systems Seminar. Jan
-        2024</i>.</p>
-      </li>
-      <li>
-        <p>Finding 1,700+ Bugs in the SMT Solvers Z3 and CVC5 in
-        Three Years.<br>
-        <i>@UCSC LSD Seminar. Feb 2023</i>.</p>
-      </li>
-      <li>
-        <p>Finding 1,700+ Bugs in the SMT Solvers Z3 and CVC5 in
-        Three Years.<br>
-        <i>@USC Software Seminar. Nov 2022</i>.</p>
-      </li>
-      <li>
-        <p>Finding 1,700+ Bugs in the SMT Solvers Z3 and CVC5.<br>
-        <i>@KIT Research Seminar Formal Methods. Sep 2022</i>.</p>
-      </li>
-      <li>
-        <p>Finding 1,500+ Bugs in the SMT Solvers Z3 and CVC5.<br>
-        <i>@Paderborn University. Jun 2022.</i></p>
-      </li>
-      <li>
-        <p>Finding 1,000+ Bugs in the SMT solvers Z3 and CVC4.<br>
-        <i>@CEA List at Paris Saclay. Feb 2021.</i></p>
-      </li>
+      <li>First author of ASE'22 paper</li>
     </ul>
-    <h2>Service</h2>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/dylan-j-wolff/?originalSubdomain=ch">Dylan J Wolff</a> (Master thesis, completed) → Ph.D. student @National University of Singapore
     <ul>
-      <li>
-          <p>Program Committee Member: <a href="https://conferences.i-cav.org/2025/">CAV' 25</a>, <a href="https://conf.researchr.org/home/ase-2025"> ASE '25 </a> </p>
-      </li>
-      <li>
-        <p>Co-organizer of SMT-COMP '25</p>
-      </li>
-      <li>
-        <p>Reviewer TOSEM '24</p>
-      </li>
-      <li>
-        <p>Artifact Evaluation Co-Chair: <a href=
-        "https://conf.researchr.org/committee/issta-2024/issta-2024-artifact-evaluation-artifact-evaluation-committee">
-        ISSTA 2024</a></p>
-      </li>
-      <li>
-        <p>Program Committee of the <a href=
-        "https://conf.researchr.org/home/icse-2024">ICSE 2024</a>
-        (Demonstrations Track)</p>
-      </li>
-      <li>
-        <p>Program Committee Member: <a href=
-        "https://aaai.org/Conferences/AAAI-20/">AAAI '20</a>,
-        <a href="https://aaai.org/Conferences/AAAI-21/">AAAI
-        '21</a>, <a href="https://synasc.ro/2022/">SYNASC '22</a>,
-        <a href="http://metwiki.net/MET23/">MET '23</a></p>
-      </li>
-      <li>
-        <p>Journal Reviewer <a href=
-        "https://www.jair.org/index.php/jair">JAIR '17</a>,
-        <a href="https://www.computer.org/csdl/journal/ts/2021/08">TSE
-        '21</a></p>
-      </li>
-      <li>
-        <p>Reviewer/Judge Student Research Competition: <a href=
-        "https://2021.splashcon.org/committee/splash-2021-SRC-reviewers-judges">
-        OOPSLA '21</a></p>
-      </li>
-      <li>
-        <p>Artifact Evaluation Committee Member: <a href=
-        "https://conf.researchr.org/track/issta-2021/issta-2021-artifact-evaluation">
-        ISSTA '21</a>, <a href=
-        "https://popl22.sigplan.org/track/POPL-2022-artifact-evaluation">
-        POPL '21</a>, <a href=
-        "https://pldi22.sigplan.org/track/pldi-2022-PLDI-Research-Artifacts">
-        PLDI '22</a></p>
-      </li>
-      <li>
-        <p><a href=
-        "https://www.sigplan.org/LongTermMentoring/">SIGPLAN-M</a>
-        Longterm mentoring (Oct '21 - now)</p>
-      </li>
+      <li>POPL '21 <a href="https://dylanjwolff.com/assets/pdf/poplsrc.pdf">SRC paper</a></li>
     </ul>
-    <h2>Teaching</h2>
-    <p>@ETH Zurich</p>
-    <ul>
-      <li>
-        <p><a href="">Algorithms and Data structures</a>, Spring
-        2024</p>
-      </li>
-      <li>
-        <p><a href=
-        "https://infsec.ethz.ch/education/ss2022/fmfp.html">Formal
-        Methods and Functional Programming</a>, Spring 2022</p>
-      </li>
-      <li>
-        <p><a href="https://lec.inf.ethz.ch/se/2021/">Software
-        Engineering</a>, Spring 2021 (Head TA)</p>
-      </li>
-      <li>
-        <p><a href="http://www.ds3lab.com/dmdb-2020/">Data
-        Modelling and Databases</a>, Spring 2020, 2023</p>
-      </li>
-      <li>
-        <p><a href=
-        "https://people.inf.ethz.ch/suz/teaching/263-2100-s20.html">
-        Research Topics in Software Engineering</a>, Spring 2020,
-        2021, 2022, Fall 2020<br></p>
-      </li>
-      <li>
-        <p><a href=
-        "https://people.inf.ethz.ch/suz/teaching/252-0210.html">Compiler
-        Design</a>, Fall 2019, 2020, 2021 (Head TA)<br></p>
-      </li>
-    </ul>
-    <p>@University of Konstanz</p>
-    <ul>
-      <li>
-        <p><a href=
-        "https://www.sen.uni-konstanz.de/teaching/current-term/past-terms/winter-term-201819/directed-studies-decision-procedures-for-software-verification/">
-        Decision Procedures</a>, Fall 2018</p>
-      </li>
-      <li>
-        <p>Software Engineering, Fall 2018</p>
-      </li>
-    </ul>
-    <p>@University of Freiburg</p>
-    <ul>
-      <li>
-        <p><a href=
-        "https://swt.informatik.uni-freiburg.de/teaching/WS2016-17/cps-dm">
-        Model Checking</a>, Fall 2016<br></p>
-      </li>
-      <li>
-        <p><a href=
-        "https://proglang.informatik.uni-freiburg.de/teaching/info3/2016ws">
-        Theoretical Computer Science</a>, Fall 2016<br></p>
-      </li>
-    </ul>
-    <div id="footer">
-      <div id="footer-text">
-        last modified: 20.03.2025
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/altin-alickaj-48210b177/?originalSubdomain=ch">Altin Alickaj</a> (Practical work, completed) &nbsp; → Oracle labs
+  </li>
+</ul>
+</section>
+
+<section>
+<h2>Invited Talks</h2>
+<ul>
+  <li>
+    <strong>Formal Methods Engineering: Toward Reliable Software Engineering</strong><br>
+    MPI-SP Sparkling Series, Apr 2025<br>
+    USI Lugano Software Seminar Series, Feb 2025
+  </li>
+  <li>
+    <strong>Solidifying SMT Solvers through Automated Testing Techniques</strong><br>
+    Harvard PL Seminar, Mar 2024<br>
+    UPenn, PLClub, Feb 2024<br>
+    UC Berkeley, Programming Systems Seminar, Jan 2024
+  </li>
+  <li>
+    <strong>Directed Testing of a String Solver</strong><br>
+    Amazon Webservices, Feb 2024
+  </li>
+  <li>
+    <strong>Finding 1,700+ Bugs in the SMT Solvers Z3 and CVC5</strong><br>
+    UCSC LSD Seminar (virtual), Feb 2023<br>
+    USC Software Seminar (virtual), Nov 2022<br>
+    KIT Research Seminar Formal Methods, Sep 2022<br>
+    Paderborn University, Jun 2022<br>
+    CEA List at Paris Saclay (virtual), Feb 2021
+  </li>
+</ul>
+</section>
+
+<section>
+<h3 id="service">Service</h3>
+<ul>
+  <li>
+    Artifact Evaluation Co-Chair: 
+    <a href="https://conf.researchr.org/committee/issta-2024/issta-2024-artifact-evaluation-artifact-evaluation-committee">
+    ISSTA 2024</a>
+  </li>
+  <li>Co-organizer of SMT-COMP (since 2025)</li>
+  <li>
+    PC Member: <a href="https://conferences.i-cav.org/2025/">CAV' 25</a>, 
+    <a href="https://conf.researchr.org/home/ase-2025">ASE '25</a>,
+    <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024 (Demo track)</a>,
+    <a href="https://aaai.org/Conferences/AAAI-20/">AAAI '20</a>, 
+    <a href="https://aaai.org/Conferences/AAAI-21/">AAAI '21</a>, 
+    <a href="https://synasc.ro/2022/">SYNASC '22</a>, 
+    <a href="http://metwiki.net/MET23/">MET '23</a>
+  </li>
+  <li>
+    Journal Reviewer:
+    TOSEM '24,
+    <a href="https://www.jair.org/index.php/jair">JAIR '17</a>, 
+    <a href="https://www.computer.org/csdl/journal/ts/2021/08">TSE '21</a>
+  </li>
+  <li>
+    Reviewer/Judge Student Research Competition: 
+    <a href="https://2021.splashcon.org/committee/splash-2021-SRC-reviewers-judges">OOPSLA '21</a>
+  </li>
+  <li>
+    Artifact Evaluation Committee Member: 
+    <a href="https://conf.researchr.org/track/issta-2021/issta-2021-artifact-evaluation">ISSTA '21</a>, 
+    <a href="https://popl22.sigplan.org/track/POPL-2022-artifact-evaluation">POPL '21</a>, 
+    <a href="https://pldi22.sigplan.org/track/pldi-2022-PLDI-Research-Artifacts">PLDI '22</a>
+  </li>
+  <li>
+    <a href="https://www.sigplan.org/LongTermMentoring/">SIGPLAN-M</a> Longterm mentoring (since Oct 2021)
+  </li>
+</ul>
+</section>
+
+<section>
+<h3 id="teaching">Teaching</h3>
+<p>@ETH Zurich</p>
+<ul>
+  <li><a href="">Algorithms and Data structures</a>, Spring 2024</li>
+  <li><a href="https://infsec.ethz.ch/education/ss2022/fmfp.html">Formal Methods and Functional Programming</a>, Spring 2022</li>
+  <li><a href="https://lec.inf.ethz.ch/se/2021/">Software Engineering</a>, Spring 2021 (Head TA)</li>
+  <li><a href="http://www.ds3lab.com/dmdb-2020/">Data Modelling and Databases</a>, Spring 2020, 2023</li>
+  <li><a href="https://people.inf.ethz.ch/suz/teaching/263-2100-s20.html">Research Topics in Software Engineering</a>, Spring 2020, 2021, 2022, Fall 2020</li>
+  <li><a href="https://people.inf.ethz.ch/suz/teaching/252-0210.html">Compiler Design</a>, Fall 2019, 2020, 2021 (Head TA)</li>
+</ul>
+<p>@University of Konstanz</p>
+<ul>
+  <li><a href="https://www.sen.uni-konstanz.de/teaching/current-term/past-terms/winter-term-201819/directed-studies-decision-procedures-for-software-verification/">Decision Procedures</a>, Fall 2018</li>
+  <li>Software Engineering, Fall 2018</li>
+</ul>
+<p>@University of Freiburg</p>
+<ul>
+  <li><a href="https://swt.informatik.uni-freiburg.de/teaching/WS2016-17/cps-dm">Model Checking</a>, Fall 2016</li>
+  <li><a href="https://proglang.informatik.uni-freiburg.de/teaching/info3/2016ws">Theoretical Computer Science</a>, Fall 2016</li>
+</ul>
+</section>
+
