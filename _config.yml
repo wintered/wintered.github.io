@@ -37,7 +37,7 @@ base: ''
 # make pages for the _projects folder
 collections:
   projects:
-    output: true
+    output: false 
 
 # Navigation bar links.
 navigation:

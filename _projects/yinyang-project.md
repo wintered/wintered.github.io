@@ -9,5 +9,3 @@ description: |
 layout: project
 image: "img/yinyang-logo.png"
 ---
-
-Some preliminary text.

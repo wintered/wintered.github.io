@@ -16,9 +16,7 @@
             {% if init == "/" %}
                 {% capture imgurl %}{{site.base}}{{project.image}}{% endcapture %}
             {% endif %}
-            <a href="{{ proj-url }}">
                 <img class="img-fluid mb-3" src="{{imgurl}}" alt="{{project.title}}"/>
-            </a>
         {% endif %}
         </div>
         <div class="card-text">
