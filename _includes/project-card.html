@@ -32,6 +32,11 @@
         {% endif %}
 
             {{ project.description | markdownify }}
+
+            <div style="text-align:center">
+            {{ project.centering }}
+            </div>
+
         </div>
         {% if project.no-link != true or project.link %}
         <!-- <a href="{{ proj-url }}"> Read more &raquo;</a> -->
