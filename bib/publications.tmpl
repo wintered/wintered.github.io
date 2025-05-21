@@ -3,30 +3,20 @@
 	{%- set prev_year = 1900 %}
 	{%- for entry in entries %}
 	<tr>
-		<td>
-			<span class="date">
-				{% if entry.fields['year'] != prev_year %}
-				<big><strong>{{ entry.fields['year'] }}</strong></big><br />
-				{% endif %}
-				{%- set prev_year = entry.fields['year'] %}
-				{{ entry.fields['month']|monthname }}
-			</span>
-		</td>
 		<td class="publication">
 			<span class="pubtitle">
 				{%- set url = entry|main_url %}
 				{%- if url %}
 				<img src="img/pdficon_small.png" width="16"
 					height="16" alt="PDF" />
-				<a href="{{ url|escape }}">{{ entry|title }}</a>.
 				{%- else %}
-				{{ entry|title }}.
+				<b><a href="{{ url|escape }}">{{ entry|title }}</a></b>
 				{%- endif %}
 			</span><br />
 			<span class="authors">
 				{{ entry.persons['author']|author_list }}.
 			</span><br />
-			<span class="venuetype">{{ entry|venue_type -}}</span><span class="venue">{{ entry|venue -}}</span>.
+			<span class="venuetype">{{ entry|venue_type -}}</span><i><span class="venue">{{ entry|venue -}}</span></i>.
 			{%- if entry.fields['note'] %}
 			<span class="note">
 			{{ entry.fields['note']|escape }}.
