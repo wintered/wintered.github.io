@@ -47,6 +47,8 @@ navigation:
     link: /#about
   - title: News 
     link: /#news
+  - title: Dissertation 
+    link: /#dissertation
   - title: Projects 
     link: /#projects
   - title: Publications 
