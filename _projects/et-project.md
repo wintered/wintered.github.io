@@ -10,6 +10,6 @@ centering: |
     <a href="https://github.com/wintered/ET"><img src="https://img.shields.io/github/v/tag/wintered/ET?label="" alt=""></a>
 
 layout: project
-image: "https://camo.githubusercontent.com/8c9de5853913d8d2a5661a7e382cf9914b31e2542155e704ab22a3dcf59468b3/68747470733a2f2f77696e74657265642e6769746875622e696f2f696d672f45542f4c6f676f2f504e472f6c6f676f2e706e67"
+image: "img/ET-logo.png"
 last-updated: 2017-04-11
 ---
