@@ -11,4 +11,4 @@ centering: |
 
 layout: project
 image: "img/ET-logo.png"
-last-updated: 2017-04-11
+---
