@@ -38,6 +38,8 @@ base: ''
 collections:
   projects:
     output: false 
+  dissertation:
+    output: false 
 
 # Navigation bar links.
 navigation:

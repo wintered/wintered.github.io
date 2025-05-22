@@ -64,6 +64,19 @@ role-tables:
 </section>
 
 <section>
+  <h3 id="dissertation">Dissertation</h3>
+  <div class="card-columns">
+      {% assign dissertation_by_date = site.dissertation | sort: 'last-updated' | reverse %}
+      {% for p in dissertation_by_date %}
+          {% if p.status != "inactive" %}
+              {% include project-card.html project=p %}
+          {% endif %}
+      {% endfor %}
+  </div>
+</section>
+
+
+<section>
 <h3 id="projects">Research Projects</h3>
     <div class="card-columns">
         {% comment %}
@@ -77,11 +90,6 @@ role-tables:
             {% endif %}
         {% endfor %}
     </div>
-</section>
-
-
-<section>
-<h3 id="dissertation">Dissertation</h3>
 </section>
 
 <section>
@@ -181,7 +189,6 @@ role-tables:
         </div>
       </li>
     </ol>
-
 </section>
 
 <section>
