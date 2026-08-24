@@ -37,19 +37,13 @@ base: ''
 # make pages for the _projects folder
 collections:
   projects:
-    output: false 
-  dissertation:
-    output: false 
+    output: false
 
 # Navigation bar links.
 navigation:
-  - title: About 
+  - title: About
     link: /#about
-  - title: News 
-    link: /#news
-  - title: Dissertation 
-    link: /#dissertation
-  - title: Projects 
+  - title: Projects
     link: /#projects
   - title: Publications 
     link: /#publications

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ site.name }}: {{ page.title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{{ site.base }}/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ site.base }}/css/home.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    </head>
+    <body class="home-page">
+
+        <header class="site-header">
+            <div class="wrap hero">
+                <img class="avatar" src="{{ site.base }}/img/headshot.jpg" alt="Headshot of Dominik Winterer">
+                <div class="hero-text">
+                    <h1>Dominik Winterer</h1>
+                    <p class="role">Lecturer in Cyber Security &mdash;
+                        <a href="https://manchester-fme.github.io/">Formal Methods Engineering Lab</a>
+                    </p>
+                    <p class="contact">
+                        University of Manchester &middot; Kilburn 2.81, Oxford Rd, M13 9PL, UK &middot;
+                        <a href="mailto:Dominik Winterer <dominik.winterer@manchester.ac.uk>">dominik.winterer@manchester.ac.uk</a>
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://scholar.google.com/citations?user=XmXhctUAAAAJ&hl=de" target="_blank" title="Google Scholar" rel="noopener noreferrer">
+                            <img src="https://cdn.simpleicons.org/googlescholar/4285F4" alt="Google Scholar"></a>
+                        <a href="https://bsky.app/profile/dominikwinterer.bsky.social" target="_blank" title="Bluesky" rel="noopener noreferrer">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/bluesky.svg" alt="Bluesky"></a>
+                        <a href="https://twitter.com/DominikWinterer" target="_blank" title="X (Twitter)" rel="noopener noreferrer">
+                            <img src="https://cdn.simpleicons.org/x/000000" alt="X (Twitter)"></a>
+                        <a href="https://www.linkedin.com/in/dominik-winterer/" target="_blank" title="LinkedIn" rel="noopener noreferrer">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+                        <a href="https://github.com/wintered" target="_blank" title="GitHub" rel="noopener noreferrer">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+                    </div>
+                </div>
+            </div>
+            <nav class="pagenav">
+                <div class="wrap">
+                    <a href="#about">About</a>
+                    <a href="#teaching">Teaching</a>
+                    <a href="#students">Team</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#talks">Talks</a>
+                    <a href="#service">Service</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="wrap">
+            {{ content }}
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrap">
+                last updated: {{ site.time | date: "%B %d, %Y" }}
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="{{ site.base }}/js/srcset-polyfill.js"></script>
+    </body>
+</html>

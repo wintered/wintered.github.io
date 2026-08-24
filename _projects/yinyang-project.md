@@ -25,4 +25,5 @@ centering: |
             
 layout: project
 image: "img/yinyang-logo.png"
+last-updated: 2020-01-01
 ---

@@ -1,0 +1,14 @@
+Webpage                                                                         
+- precise job description Assistant Professor (eq. UK: Lecturer) in Cyber Security    
+  not in headline but elsewhere                                                    
+- add Lu Maltsis (Ph.D. student starting January 2026)                          
+- add Kareem Seifo (Ph.D. student, starting October 2026)                       
+- add Muhammad Alam (BSc. student, final year project)                          
+- consistency with CV on service and on invited talks                           
+- remove all news until Aug 2025                                                
+- Add news on ICSE '27, FSE '27, OOPSLA '27 program committes with links        
+- Add Uni Manchester teaching and consolidate the other teaching sections:         
+    - COMP38412  Cybersecurity: Principles and Secure Software Systems (2026-2027 unit lead) 
+    - COMP63342 Software Security (co-teaching)
+    - COMP23311 Software Engineering (Co-teaching)                                                 
+- remove the formal methods engineering new field claim  

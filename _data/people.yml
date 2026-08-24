@@ -74,6 +74,21 @@ grad-i:
     display_name: "Grad I"
     role: grad
 
+lu-maltsis:
+    display_name: "Lu Maltsis"
+    role: grad
+    bio: "Ph.D. student starting January 2026"
+
+kareem-seifo:
+    display_name: "Kareem Seifo"
+    role: grad
+    bio: "Ph.D. student starting October 2026"
+
+muhammad-alam:
+    display_name: "Muhammad Alam"
+    role: ugrad
+    bio: "BSc. student, final year project"
+
 alum-a:
     display_name: "Alum A"
     role: alum

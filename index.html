@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Home
 notitle: true
 
@@ -19,44 +19,65 @@ role-tables:
     image: false
 
 ---
-<section>
-    <h3 id="about">About</h3>
-    I am an Assistant Professor (Lecturer) at the University of Manchester, where I lead the <a href="https://manchester-fme.github.io/">Formal Methods Engineering Lab</a>. I completed my Ph.D. and PostDoc at ETH Zurich, and before that, my MSc at the University of Freiburg in Germany. I also did research internships at the Automated Reasoning Group at AWS and at IBM Research in the United States.
-    <br><br>
-    My research aims to establish Formal Methods Engineering—a new discipline focused on making Formal Methods, mathematically rigorous methods for bug prevention, more practical and widely adopted. As a first step, I led one of the largest academic bug-hunting campaigns to date, uncovering over <b>1,800 bugs and enabling more than 1,300 fixes in SMT solvers</b>, which are foundational tools in Formal Methods.
+<section class="about" id="about">
+    <p>
+    I am an Assistant Professor (eq. UK: Lecturer) in Cyber Security at the University of Manchester, where I lead the <a href="https://manchester-fme.github.io/">Formal Methods Engineering Lab</a>. I completed my Ph.D. and PostDoc at ETH Zurich, and before that, my MSc at the University of Freiburg in Germany. I also did research internships at the Automated Reasoning Group at AWS and at IBM Research in the United States.
+    </p>
+    <p>
+    My research goal is best characterized as <strong>Formal Methods Engineering</strong>: making Formal Methods&mdash;mathematically rigorous methods for bug prevention&mdash;more practical, widely adopted, and resilient against AI.
+    </p>
+    <p>
+    As a first step, I led one of the largest academic bug-hunting campaigns to date, uncovering over <b>1,800 bugs and enabling more than 1,300 fixes in SMT solvers</b>, which are foundational tools in Formal Methods.
+    </p>
 </section>
 
-<section>
-    <h3 id="news">News</h3>
+<section id="teaching">
+<h2>Teaching</h2>
+<div class="ref-block">
+<ul>
+  <li>COMP38412 Cybersecurity: Principles and Secure Software Systems, 2026-2027 (Unit Lead)</li>
+  <li>COMP63342 Software Security, Spring 2026 (Co-teaching)</li>
+  <li>COMP23311 Software Engineering, Fall 2025 (Co-teaching)</li>
+</ul>
+<p class="see-more"><a href="{{ site.base }}/previously.html#teaching">Earlier teaching, before Manchester &raquo;</a></p>
+</div>
+</section>
+
+<section id="students">
+<h2>Team</h2>
+<div class="ref-block">
+<ul>
+ <li>
+   <a href="https://lmaltsis.github.io/">Lu Maltsis</a> (Ph.D. student, Jan 2026 &ndash; )
+   <ul>
+     <li>Co-supervisor: Lucas Cordeiro</li>
+   </ul>
+ </li>
+ <li>
+   <a href="">Kareem Seifo</a> (Ph.D. student, Oct 2026 &ndash; )
+   <ul>
+     <li>Co-supervisor: Suzanne Embury</li>
+   </ul>
+ </li>
+ <li><a href="">Andrei Zhukov</a> (external MSc. thesis, completed Mar 2026)</li>
+</ul>
+<p class="see-more"><a href="{{ site.base }}/previously.html#students">Earlier supervised students, before Manchester &raquo;</a></p>
+</div>
+</section>
+
+{% comment %}
+<section id="news">
+    <h2>News</h2>
     <ul class="news list-unstyled">
         {% for post in site.posts limit: site.front_page_news %}
             {% include news-item.html item=post %}
         {% endfor %}
     </ul>
-    {% assign numposts = site.posts | size %}
-    {% if numposts >= 1 %}
-        <!--<p>-->
-            <!--<span class="fa fa-fw fa-history"></span>-->
-            <!--<a href="{{ site.base }}/blog.html">Older news</a>-->
-        <!--</p>-->
-    {% endif %}
 </section>
+{% endcomment %}
 
-<section>
-  <h3 id="dissertation">Dissertation</h3>
-  <div class="card-columns">
-      {% assign dissertation_by_date = site.dissertation | sort: 'last-updated' | reverse %}
-      {% for p in dissertation_by_date %}
-          {% if p.status != "inactive" %}
-              {% include project-card.html project=p %}
-          {% endif %}
-      {% endfor %}
-  </div>
-</section>
-
-
-<section>
-<h3 id="projects">Research Projects</h3>
+<section id="projects">
+<h2>Research Projects</h2>
     <div class="card-columns">
         {% comment %}
         Sort the projects by date, putting those without dates last
@@ -71,10 +92,9 @@ role-tables:
     </div>
 </section>
 
-<section>
-<h3 id="publications">Selected Publications</h3>
- <br />
- <ol>
+<section id="publications">
+<h2>Selected Publications</h2>
+ <ol class="pub-list">
       <li class="pubs">
         <p><a href=
         "https://dl.acm.org/doi/10.1145/3689795">
@@ -83,10 +103,9 @@ role-tables:
         <b>Dominik Winterer</b>, Zhendong Su<br>
         In <i><a a=
         "https://wintered.github.io/papers/winterer-su-oopsla2024.pdf"
-        href="">Proceedings of SPLASH/OOPSLA 2024</a></i><br></p>
-        <div style="margin-top:-15px">
-        <p>&nbsp; ⭐ <span style="color:red">Bounded Validation of
-        the SMT Solvers Z3 and cvc5</span></p>
+        href="">Proceedings of SPLASH/OOPSLA 2024</a></i></p>
+        <div class="badge-row">
+            <span class="pub-badge">⭐ Bounded Validation of the SMT Solvers Z3 and cvc5</span>
         </div>
       </li>
       <li class="pubs">
@@ -100,7 +119,7 @@ role-tables:
         ASE 2022</a></i> &nbsp; [<a href=
         "https://testsmt.github.io/slides/ase22_finding_and_understanding_incompleteness_bugs.pdf">slides</a>
         / <a href=
-        "https://github.com/testsmt/janus">tool</a>]<br></p>
+        "https://github.com/testsmt/janus">tool</a>]</p>
       </li>
       <li class="pubs">
         <p><a href=
@@ -140,9 +159,8 @@ role-tables:
         video abstract</a>]<br>
         <span class="small"><sup>*</sup> Both authors contributed
         equally.</span></p>
-        <div style="margin-top:-15px">
-        <p>&nbsp; ⭐ <span style="color:red">1,000+ bugs in the SMT
-        Solvers Z3 and CVC4</span></p>
+        <div class="badge-row">
+            <span class="pub-badge">⭐ 1,000+ bugs in the SMT Solvers Z3 and CVC4</span>
         </div>
       </li>
       <li class="pubs">
@@ -159,82 +177,43 @@ role-tables:
         "https://www.youtube.com/watch?list=PLyrlk8Xaylp5mvxARtX5ncjy9p4X_Ajwd&amp;time_continue=1&amp;v=JFu8cJYbxBI&amp;feature=emb_logo">
         video abstract</a>]<br>
         <span class="small"><sup>*</sup> Both authors contributed
-        equally.</span><br></p>
-        <div style="margin-top:-15px">
-          🏆 <span style="color:red;"><strong>ACM Distinguished Paper
-          Award</strong></span>
-          <p>⭐ <span style="color:red">Invited to ACM TOPLAS
-          Special Issue</span></p>
+        equally.</span></p>
+        <div class="badge-row">
+            <span class="pub-badge award">🏆 ACM Distinguished Paper Award</span>
+            <span class="pub-badge">⭐ Invited to ACM TOPLAS Special Issue</span>
         </div>
       </li>
     </ol>
 </section>
 
-<section>
-<h3>Awards and Grants</h3>
+<section id="awards">
+<h2>Awards and Grants</h2>
+<div class="ref-block">
 <ul>
   <li>Heidelberg Laureate Forum 2022</li>
-  <li><a href="https://inf.ethz.ch/news-and-events/spotlights/infk-news-channel/2022/07/amazon-research-award-zhendong-su.html">Amazon Research Award Fall 2021</a> (Co-PI)</li>
+  <li><a href="https://inf.ethz.ch/news-and-events/spotlights/infk-news-channel/2022/07/amazon-research-award-zhendong-su.html">Amazon Research Award Fall 2021</a> (Co-I)</li>
   <li><a href="https://opensource.googleblog.com/2021/04/announcing-first-group-of-google-open-source-peer-bonus-winners.html#:~:text=The%20Google%20Open%20Source%20Peer,group%20of%20winners%20in%202021!">Google Open Source Peers Bonus 2021</a> (for yinyang)</li>
   <li>Invited to ACM TOPLAS Special Issue</li>
   <li><a href="https://conf.researchr.org/home/pldi-2020">ACM Distinguished Paper Award (PLDI '20)</a></li>
   <li>IJCAI '16 Travel Grant Award</li>
 </ul>
+</div>
 </section>
 
-<section>
-<h3>Supervised Students</h3>
-<h6> University of Manchester</h6>
-<ul>
- <li><a href="">Andrei Zhukov</a> (external MSc. thesis, ongoing)</li>
-</ul>
-<h6> ETH Zurich </h6>
-<ul>
-  <li><a href="">Pasquale Jordan</a> (MSc. thesis, completed)</li>
-  <li><a href="">Andrei Zhukov</a> (Practical work, completed)</li>
-  <li><a href="https://theauk.github.io/">Thea Kjeldsmark</a> (Intern, completed)</li>
-  <li><a href="">Lu Maltsis</a> (BSc. thesis, completed)</li>
-  <li>
-    <a href="">Violet Szabo;</a> (Intern, completed)
-    <ul>
-      <li>POPL '24 SRC paper</li>
-      <li>first author on work on compilation hardness of PLs [<a href="https://arxiv.org/pdf/2406.04778">preprint</a>]</li>
-    </ul>
-  </li>
-  <li><a href="">Marc Andriu Carigiet</a> (BSc. thesis, completed)</li>
-  <li><a href="">Michael Mörschell</a> (BSc. thesis, completed) → MSc. student @ETH Zurich</li>
-  <li>
-    <a href="https://www.linkedin.com/in/jiwon-park-473998170/?originalSubdomain=fr">Jiwon Park</a> (BSc. thesis + Internship, completed) &nbsp; → Ph.D. student @UC Berkeley
-    <ul>
-      <li>2nd place@<a href="https://twitter.com/Sharma__Tushar/status/1431224348426129416">FSE '21 SRC</a></li>
-      <li>Co-first author of OOPSLA '21 paper</li>
-    </ul>
-  </li>
-  <li>
-    <a href="https://maurobringolf.ch/">Mauro Bringolf</a> (MSc. thesis, completed) → Software Engineer @ <s>University of St. Gallen</s> Digitec 
-    <ul>
-      <li>First author of ASE'22 paper</li>
-    </ul>
-  </li>
-  <li>
-    <a href="https://www.linkedin.com/in/dylan-j-wolff/?originalSubdomain=ch">Dylan J Wolff</a> (MSc. thesis, completed) → Ph.D. student @National University of Singapore
-    <ul>
-      <li>POPL '21 <a href="https://dylanjwolff.com/assets/pdf/poplsrc.pdf">SRC paper</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="https://www.linkedin.com/in/altin-alickaj-48210b177/?originalSubdomain=ch">Altin Alickaj</a> (Practical work, completed) &nbsp; → Oracle labs
-  </li>
-</ul>
-</section>
-
-<section>
+<section id="talks">
 <h2>Invited Talks</h2>
+<div class="ref-block">
 <ul>
+  <li>
+    <strong>Formal Methods and Beyond: Finding and Fixing Bugs Through Domain-Specific Techniques</strong><br>
+    TU Nuremberg, May 2026
+  </li>
   <li>
     <strong>Formal Methods Engineering: Toward Reliable Software Engineering</strong><br>
+    Cornell &amp; UT Austin SE Seminar (virtual), Dec 2025<br>
     MPI-SP Sparkling Series, Apr 2025<br>
-    USI Lugano Software Seminar Series, Feb 2025
+    USI Lugano Software Seminar Series, Feb 2025<br>
+    UC Riverside (faculty interview), Jan 2025
   </li>
   <li>
     <strong>Solidifying SMT Solvers through Automated Testing Techniques</strong><br>
@@ -255,70 +234,60 @@ role-tables:
     CEA List at Paris Saclay (virtual), Feb 2021
   </li>
 </ul>
+</div>
 </section>
 
-<section>
-<h3 id="service">Service</h3>
+<section id="service">
+<h2>Service</h2>
+<div class="ref-block">
 <ul>
   <li>
-    Artifact Evaluation Co-Chair: 
+    Student Research Competition Co-Chair:
+    <a href="https://conf.researchr.org/track/ase-2026/ase-2026-student-research-competition">ASE '26</a>
+  </li>
+  <li>
+    Artifact Evaluation Co-Chair:
     <a href="https://conf.researchr.org/committee/issta-2024/issta-2024-artifact-evaluation-artifact-evaluation-committee">
     ISSTA 2024</a>
   </li>
-  <li>Co-organizer of SMT-COMP (since 2025)</li>
+  <li>Co-organizer of SMT-COMP (2025 &ndash; 2027)</li>
   <li>
-    PC Member: 
-    <a href="https://eurosp2026.ieee-security.org/">Euro S&P '26</a>, 
-    <a href="https://conferences.i-cav.org/2025/">CAV '25</a>, 
+    Program Committee Member:
+    <a href="https://conf.researchr.org/home/fse-2027">FSE '27</a>,
+    <a href="https://conf.researchr.org/home/icse-2027">ICSE '27</a>,
+    <a href="https://conf.researchr.org/track/splash-2027/splashoopsla2027">OOPSLA '27</a>,
+    <a href="https://eurosp2026.ieee-security.org/">Euro S&P '26</a>,
+    <a href="https://pldi26.sigplan.org/">PLDI '26</a>,
     <a href="https://conf.researchr.org/home/ase-2025">ASE '25</a>,
-    <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024 (Demo track)</a>,
-    <a href="https://aaai.org/Conferences/AAAI-20/">AAAI '20</a>, 
-    <a href="https://aaai.org/Conferences/AAAI-21/">AAAI '21</a>, 
-    <a href="https://synasc.ro/2022/">SYNASC '22</a>, 
-    <a href="http://metwiki.net/MET23/">MET '23</a>
+    <a href="https://conferences.i-cav.org/2025/">CAV '25</a>,
+    <a href="https://fuzzingworkshop.github.io/">FUZZING '25</a>,
+    <a href="https://conf.researchr.org/home/icse-2024">ICSE '24 (Demo track)</a>,
+    <a href="https://2024.splashcon.org/track/splash-2024-SRC">OOPSLA '24 SRC</a>,
+    <a href="http://metwiki.net/MET23/">MET '23</a>,
+    <a href="https://synasc.ro/2022/">SYNASC '22</a>,
+    <a href="https://aaai.org/Conferences/AAAI-21/">AAAI '21</a>,
+    <a href="https://aaai.org/Conferences/AAAI-20/">AAAI '20</a>
   </li>
   <li>
     Journal Reviewer:
-    TOSEM '24,
-    <a href="https://www.jair.org/index.php/jair">JAIR '17</a>, 
-    <a href="https://www.computer.org/csdl/journal/ts/2021/08">TSE '21</a>
+    <a href="https://www.computer.org/csdl/journal/ts/2021/08">TSE '21</a>,
+    <a href="https://www.jair.org/index.php/jair">JAIR '17</a>,
+    TOSEM '24
   </li>
   <li>
-    Reviewer/Judge Student Research Competition: 
+    Artifact Evaluation Committee Member:
+    <a href="https://pldi22.sigplan.org/track/pldi-2022-PLDI-Research-Artifacts">PLDI '22</a>,
+    <a href="https://popl22.sigplan.org/track/POPL-2022-artifact-evaluation">POPL '21</a>,
+    <a href="https://conf.researchr.org/track/issta-2021/issta-2021-artifact-evaluation">ISSTA '21</a>
+  </li>
+  <li>
+    Reviewer/Judge Student Research Competition:
     <a href="https://2021.splashcon.org/committee/splash-2021-SRC-reviewers-judges">OOPSLA '21</a>
   </li>
   <li>
-    Artifact Evaluation Committee Member: 
-    <a href="https://conf.researchr.org/track/issta-2021/issta-2021-artifact-evaluation">ISSTA '21</a>, 
-    <a href="https://popl22.sigplan.org/track/POPL-2022-artifact-evaluation">POPL '21</a>, 
-    <a href="https://pldi22.sigplan.org/track/pldi-2022-PLDI-Research-Artifacts">PLDI '22</a>
-  </li>
-  <li>
-    <a href="https://www.sigplan.org/LongTermMentoring/">SIGPLAN-M</a> Longterm mentoring (since Oct 2021)
+    <a href="https://www.sigplan.org/LongTermMentoring/">SIGPLAN-M</a> Longterm mentoring (Oct 2021 &ndash; )
   </li>
 </ul>
-</section>
+</div>
 
-<section>
-<h3 id="teaching">Teaching</h3>
-@ETH Zurich
-<ul>
-  <li><a href="">Algorithms and Data structures</a>, Spring 2024</li>
-  <li><a href="https://infsec.ethz.ch/education/ss2022/fmfp.html">Formal Methods and Functional Programming</a>, Spring 2022</li>
-  <li><a href="https://lec.inf.ethz.ch/se/2021/">Software Engineering</a>, Spring 2021 (Head TA)</li>
-  <li><a href="http://www.ds3lab.com/dmdb-2020/">Data Modelling and Databases</a>, Spring 2020, 2023</li>
-  <li><a href="https://people.inf.ethz.ch/suz/teaching/263-2100-s20.html">Research Topics in Software Engineering</a>, Spring 2020, 2021, 2022, Fall 2020</li>
-  <li><a href="https://people.inf.ethz.ch/suz/teaching/252-0210.html">Compiler Design</a>, Fall 2019, 2020, 2021 (Head TA)</li>
-</ul>
-@University of Konstanz
-<ul>
-  <li><a href="https://www.sen.uni-konstanz.de/teaching/current-term/past-terms/winter-term-201819/directed-studies-decision-procedures-for-software-verification/">Decision Procedures</a>, Fall 2018</li>
-  <li>Software Engineering, Fall 2018</li>
-</ul>
-@University of Freiburg
-<ul>
-  <li><a href="https://swt.informatik.uni-freiburg.de/teaching/WS2016-17/cps-dm">Model Checking</a>, Fall 2016</li>
-  <li><a href="https://proglang.informatik.uni-freiburg.de/teaching/info3/2016ws">Theoretical Computer Science</a>, Fall 2016</li>
-</ul>
 </section>
-
